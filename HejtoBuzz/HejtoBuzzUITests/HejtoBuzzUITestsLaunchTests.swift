@@ -1,9 +1,3 @@
-//
-//  HejtoBuzzUITestsLaunchTests.swift
-//  HejtoBuzzUITests
-//
-//  Created by Edward Maliniak on 28/02/2023.
-//
 
 import XCTest
 
