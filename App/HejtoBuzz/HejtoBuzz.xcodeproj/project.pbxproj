@@ -7,61 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		649A6F8B29AEAA7B002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6F8A29AEAA7B002C1BFC /* HejtoBuzzApp.swift */; };
-		649A6F8D29AEAA7B002C1BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6F8C29AEAA7B002C1BFC /* ContentView.swift */; };
-		649A6F8F29AEAA7C002C1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6F8E29AEAA7C002C1BFC /* Assets.xcassets */; };
-		649A6F9229AEAA7C002C1BFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6F9129AEAA7C002C1BFC /* Preview Assets.xcassets */; };
-		649A6F9C29AEAA7C002C1BFC /* HejtoBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6F9B29AEAA7C002C1BFC /* HejtoBuzzTests.swift */; };
-		649A6FA629AEAA7C002C1BFC /* HejtoBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FA529AEAA7C002C1BFC /* HejtoBuzzUITests.swift */; };
-		649A6FA829AEAA7C002C1BFC /* HejtoBuzzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FA729AEAA7C002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */; };
+		649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */; };
+		649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC229AEADFD002C1BFC /* ContentView.swift */; };
+		649A6FC529AEADFE002C1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6FC429AEADFE002C1BFC /* Assets.xcassets */; };
+		649A6FC829AEADFE002C1BFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6FC729AEADFE002C1BFC /* Preview Assets.xcassets */; };
+		649A6FD229AEADFE002C1BFC /* HejtoBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FD129AEADFE002C1BFC /* HejtoBuzzTests.swift */; };
+		649A6FDC29AEADFE002C1BFC /* HejtoBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FDB29AEADFE002C1BFC /* HejtoBuzzUITests.swift */; };
+		649A6FDE29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FDD29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		649A6F9829AEAA7C002C1BFC /* PBXContainerItemProxy */ = {
+		649A6FCE29AEADFE002C1BFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 649A6F7F29AEAA7B002C1BFC /* Project object */;
+			containerPortal = 649A6FB529AEADFD002C1BFC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 649A6F8629AEAA7B002C1BFC;
+			remoteGlobalIDString = 649A6FBC29AEADFD002C1BFC;
 			remoteInfo = HejtoBuzz;
 		};
-		649A6FA229AEAA7C002C1BFC /* PBXContainerItemProxy */ = {
+		649A6FD829AEADFE002C1BFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 649A6F7F29AEAA7B002C1BFC /* Project object */;
+			containerPortal = 649A6FB529AEADFD002C1BFC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 649A6F8629AEAA7B002C1BFC;
+			remoteGlobalIDString = 649A6FBC29AEADFD002C1BFC;
 			remoteInfo = HejtoBuzz;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		649A6F8729AEAA7B002C1BFC /* HejtoBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HejtoBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		649A6F8A29AEAA7B002C1BFC /* HejtoBuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzApp.swift; sourceTree = "<group>"; };
-		649A6F8C29AEAA7B002C1BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		649A6F8E29AEAA7C002C1BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		649A6F9129AEAA7C002C1BFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		649A6F9729AEAA7C002C1BFC /* HejtoBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HejtoBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		649A6F9B29AEAA7C002C1BFC /* HejtoBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzTests.swift; sourceTree = "<group>"; };
-		649A6FA129AEAA7C002C1BFC /* HejtoBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HejtoBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		649A6FA529AEAA7C002C1BFC /* HejtoBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITests.swift; sourceTree = "<group>"; };
-		649A6FA729AEAA7C002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HejtoBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzApp.swift; sourceTree = "<group>"; };
+		649A6FC229AEADFD002C1BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		649A6FC429AEADFE002C1BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		649A6FC729AEADFE002C1BFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		649A6FCD29AEADFE002C1BFC /* HejtoBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HejtoBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		649A6FD129AEADFE002C1BFC /* HejtoBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzTests.swift; sourceTree = "<group>"; };
+		649A6FD729AEADFE002C1BFC /* HejtoBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HejtoBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		649A6FDB29AEADFE002C1BFC /* HejtoBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITests.swift; sourceTree = "<group>"; };
+		649A6FDD29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		649A6F8429AEAA7B002C1BFC /* Frameworks */ = {
+		649A6FBA29AEADFD002C1BFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		649A6F9429AEAA7C002C1BFC /* Frameworks */ = {
+		649A6FCA29AEADFE002C1BFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		649A6F9E29AEAA7C002C1BFC /* Frameworks */ = {
+		649A6FD429AEADFE002C1BFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,58 +71,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		649A6F7E29AEAA7B002C1BFC = {
+		649A6FB429AEADFD002C1BFC = {
 			isa = PBXGroup;
 			children = (
-				649A6F8929AEAA7B002C1BFC /* HejtoBuzz */,
-				649A6F9A29AEAA7C002C1BFC /* HejtoBuzzTests */,
-				649A6FA429AEAA7C002C1BFC /* HejtoBuzzUITests */,
-				649A6F8829AEAA7B002C1BFC /* Products */,
+				649A6FBF29AEADFD002C1BFC /* HejtoBuzz */,
+				649A6FD029AEADFE002C1BFC /* HejtoBuzzTests */,
+				649A6FDA29AEADFE002C1BFC /* HejtoBuzzUITests */,
+				649A6FBE29AEADFD002C1BFC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		649A6F8829AEAA7B002C1BFC /* Products */ = {
+		649A6FBE29AEADFD002C1BFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				649A6F8729AEAA7B002C1BFC /* HejtoBuzz.app */,
-				649A6F9729AEAA7C002C1BFC /* HejtoBuzzTests.xctest */,
-				649A6FA129AEAA7C002C1BFC /* HejtoBuzzUITests.xctest */,
+				649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */,
+				649A6FCD29AEADFE002C1BFC /* HejtoBuzzTests.xctest */,
+				649A6FD729AEADFE002C1BFC /* HejtoBuzzUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		649A6F8929AEAA7B002C1BFC /* HejtoBuzz */ = {
+		649A6FBF29AEADFD002C1BFC /* HejtoBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				649A6F8A29AEAA7B002C1BFC /* HejtoBuzzApp.swift */,
-				649A6F8C29AEAA7B002C1BFC /* ContentView.swift */,
-				649A6F8E29AEAA7C002C1BFC /* Assets.xcassets */,
-				649A6F9029AEAA7C002C1BFC /* Preview Content */,
+				649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */,
+				649A6FC229AEADFD002C1BFC /* ContentView.swift */,
+				649A6FC429AEADFE002C1BFC /* Assets.xcassets */,
+				649A6FC629AEADFE002C1BFC /* Preview Content */,
 			);
 			path = HejtoBuzz;
 			sourceTree = "<group>";
 		};
-		649A6F9029AEAA7C002C1BFC /* Preview Content */ = {
+		649A6FC629AEADFE002C1BFC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				649A6F9129AEAA7C002C1BFC /* Preview Assets.xcassets */,
+				649A6FC729AEADFE002C1BFC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		649A6F9A29AEAA7C002C1BFC /* HejtoBuzzTests */ = {
+		649A6FD029AEADFE002C1BFC /* HejtoBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				649A6F9B29AEAA7C002C1BFC /* HejtoBuzzTests.swift */,
+				649A6FD129AEADFE002C1BFC /* HejtoBuzzTests.swift */,
 			);
 			path = HejtoBuzzTests;
 			sourceTree = "<group>";
 		};
-		649A6FA429AEAA7C002C1BFC /* HejtoBuzzUITests */ = {
+		649A6FDA29AEADFE002C1BFC /* HejtoBuzzUITests */ = {
 			isa = PBXGroup;
 			children = (
-				649A6FA529AEAA7C002C1BFC /* HejtoBuzzUITests.swift */,
-				649A6FA729AEAA7C002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */,
+				649A6FDB29AEADFE002C1BFC /* HejtoBuzzUITests.swift */,
+				649A6FDD29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */,
 			);
 			path = HejtoBuzzUITests;
 			sourceTree = "<group>";
@@ -130,13 +130,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		649A6F8629AEAA7B002C1BFC /* HejtoBuzz */ = {
+		649A6FBC29AEADFD002C1BFC /* HejtoBuzz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 649A6FAB29AEAA7C002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzz" */;
+			buildConfigurationList = 649A6FE129AEADFE002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzz" */;
 			buildPhases = (
-				649A6F8329AEAA7B002C1BFC /* Sources */,
-				649A6F8429AEAA7B002C1BFC /* Frameworks */,
-				649A6F8529AEAA7B002C1BFC /* Resources */,
+				649A6FB929AEADFD002C1BFC /* Sources */,
+				649A6FBA29AEADFD002C1BFC /* Frameworks */,
+				649A6FBB29AEADFD002C1BFC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -144,69 +144,69 @@
 			);
 			name = HejtoBuzz;
 			productName = HejtoBuzz;
-			productReference = 649A6F8729AEAA7B002C1BFC /* HejtoBuzz.app */;
+			productReference = 649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		649A6F9629AEAA7C002C1BFC /* HejtoBuzzTests */ = {
+		649A6FCC29AEADFE002C1BFC /* HejtoBuzzTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 649A6FAE29AEAA7C002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzTests" */;
+			buildConfigurationList = 649A6FE429AEADFE002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzTests" */;
 			buildPhases = (
-				649A6F9329AEAA7C002C1BFC /* Sources */,
-				649A6F9429AEAA7C002C1BFC /* Frameworks */,
-				649A6F9529AEAA7C002C1BFC /* Resources */,
+				649A6FC929AEADFE002C1BFC /* Sources */,
+				649A6FCA29AEADFE002C1BFC /* Frameworks */,
+				649A6FCB29AEADFE002C1BFC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				649A6F9929AEAA7C002C1BFC /* PBXTargetDependency */,
+				649A6FCF29AEADFE002C1BFC /* PBXTargetDependency */,
 			);
 			name = HejtoBuzzTests;
 			productName = HejtoBuzzTests;
-			productReference = 649A6F9729AEAA7C002C1BFC /* HejtoBuzzTests.xctest */;
+			productReference = 649A6FCD29AEADFE002C1BFC /* HejtoBuzzTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		649A6FA029AEAA7C002C1BFC /* HejtoBuzzUITests */ = {
+		649A6FD629AEADFE002C1BFC /* HejtoBuzzUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 649A6FB129AEAA7C002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzUITests" */;
+			buildConfigurationList = 649A6FE729AEADFE002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzUITests" */;
 			buildPhases = (
-				649A6F9D29AEAA7C002C1BFC /* Sources */,
-				649A6F9E29AEAA7C002C1BFC /* Frameworks */,
-				649A6F9F29AEAA7C002C1BFC /* Resources */,
+				649A6FD329AEADFE002C1BFC /* Sources */,
+				649A6FD429AEADFE002C1BFC /* Frameworks */,
+				649A6FD529AEADFE002C1BFC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				649A6FA329AEAA7C002C1BFC /* PBXTargetDependency */,
+				649A6FD929AEADFE002C1BFC /* PBXTargetDependency */,
 			);
 			name = HejtoBuzzUITests;
 			productName = HejtoBuzzUITests;
-			productReference = 649A6FA129AEAA7C002C1BFC /* HejtoBuzzUITests.xctest */;
+			productReference = 649A6FD729AEADFE002C1BFC /* HejtoBuzzUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		649A6F7F29AEAA7B002C1BFC /* Project object */ = {
+		649A6FB529AEADFD002C1BFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					649A6F8629AEAA7B002C1BFC = {
+					649A6FBC29AEADFD002C1BFC = {
 						CreatedOnToolsVersion = 14.3;
 					};
-					649A6F9629AEAA7C002C1BFC = {
+					649A6FCC29AEADFE002C1BFC = {
 						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 649A6F8629AEAA7B002C1BFC;
+						TestTargetID = 649A6FBC29AEADFD002C1BFC;
 					};
-					649A6FA029AEAA7C002C1BFC = {
+					649A6FD629AEADFE002C1BFC = {
 						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 649A6F8629AEAA7B002C1BFC;
+						TestTargetID = 649A6FBC29AEADFD002C1BFC;
 					};
 				};
 			};
-			buildConfigurationList = 649A6F8229AEAA7B002C1BFC /* Build configuration list for PBXProject "HejtoBuzz" */;
+			buildConfigurationList = 649A6FB829AEADFD002C1BFC /* Build configuration list for PBXProject "HejtoBuzz" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,36 +214,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 649A6F7E29AEAA7B002C1BFC;
-			productRefGroup = 649A6F8829AEAA7B002C1BFC /* Products */;
+			mainGroup = 649A6FB429AEADFD002C1BFC;
+			productRefGroup = 649A6FBE29AEADFD002C1BFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				649A6F8629AEAA7B002C1BFC /* HejtoBuzz */,
-				649A6F9629AEAA7C002C1BFC /* HejtoBuzzTests */,
-				649A6FA029AEAA7C002C1BFC /* HejtoBuzzUITests */,
+				649A6FBC29AEADFD002C1BFC /* HejtoBuzz */,
+				649A6FCC29AEADFE002C1BFC /* HejtoBuzzTests */,
+				649A6FD629AEADFE002C1BFC /* HejtoBuzzUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		649A6F8529AEAA7B002C1BFC /* Resources */ = {
+		649A6FBB29AEADFD002C1BFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649A6F9229AEAA7C002C1BFC /* Preview Assets.xcassets in Resources */,
-				649A6F8F29AEAA7C002C1BFC /* Assets.xcassets in Resources */,
+				649A6FC829AEADFE002C1BFC /* Preview Assets.xcassets in Resources */,
+				649A6FC529AEADFE002C1BFC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		649A6F9529AEAA7C002C1BFC /* Resources */ = {
+		649A6FCB29AEADFE002C1BFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		649A6F9F29AEAA7C002C1BFC /* Resources */ = {
+		649A6FD529AEADFE002C1BFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,49 +253,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		649A6F8329AEAA7B002C1BFC /* Sources */ = {
+		649A6FB929AEADFD002C1BFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649A6F8D29AEAA7B002C1BFC /* ContentView.swift in Sources */,
-				649A6F8B29AEAA7B002C1BFC /* HejtoBuzzApp.swift in Sources */,
+				649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */,
+				649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		649A6F9329AEAA7C002C1BFC /* Sources */ = {
+		649A6FC929AEADFE002C1BFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649A6F9C29AEAA7C002C1BFC /* HejtoBuzzTests.swift in Sources */,
+				649A6FD229AEADFE002C1BFC /* HejtoBuzzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		649A6F9D29AEAA7C002C1BFC /* Sources */ = {
+		649A6FD329AEADFE002C1BFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649A6FA829AEAA7C002C1BFC /* HejtoBuzzUITestsLaunchTests.swift in Sources */,
-				649A6FA629AEAA7C002C1BFC /* HejtoBuzzUITests.swift in Sources */,
+				649A6FDE29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift in Sources */,
+				649A6FDC29AEADFE002C1BFC /* HejtoBuzzUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		649A6F9929AEAA7C002C1BFC /* PBXTargetDependency */ = {
+		649A6FCF29AEADFE002C1BFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 649A6F8629AEAA7B002C1BFC /* HejtoBuzz */;
-			targetProxy = 649A6F9829AEAA7C002C1BFC /* PBXContainerItemProxy */;
+			target = 649A6FBC29AEADFD002C1BFC /* HejtoBuzz */;
+			targetProxy = 649A6FCE29AEADFE002C1BFC /* PBXContainerItemProxy */;
 		};
-		649A6FA329AEAA7C002C1BFC /* PBXTargetDependency */ = {
+		649A6FD929AEADFE002C1BFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 649A6F8629AEAA7B002C1BFC /* HejtoBuzz */;
-			targetProxy = 649A6FA229AEAA7C002C1BFC /* PBXContainerItemProxy */;
+			target = 649A6FBC29AEADFD002C1BFC /* HejtoBuzz */;
+			targetProxy = 649A6FD829AEADFE002C1BFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		649A6FA929AEAA7C002C1BFC /* Debug */ = {
+		649A6FDF29AEADFE002C1BFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -355,7 +355,7 @@
 			};
 			name = Debug;
 		};
-		649A6FAA29AEAA7C002C1BFC /* Release */ = {
+		649A6FE029AEADFE002C1BFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,7 +409,7 @@
 			};
 			name = Release;
 		};
-		649A6FAC29AEAA7C002C1BFC /* Debug */ = {
+		649A6FE229AEADFE002C1BFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -437,7 +437,7 @@
 			};
 			name = Debug;
 		};
-		649A6FAD29AEAA7C002C1BFC /* Release */ = {
+		649A6FE329AEADFE002C1BFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -465,7 +465,7 @@
 			};
 			name = Release;
 		};
-		649A6FAF29AEAA7C002C1BFC /* Debug */ = {
+		649A6FE529AEADFE002C1BFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -484,7 +484,7 @@
 			};
 			name = Debug;
 		};
-		649A6FB029AEAA7C002C1BFC /* Release */ = {
+		649A6FE629AEADFE002C1BFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -503,7 +503,7 @@
 			};
 			name = Release;
 		};
-		649A6FB229AEAA7C002C1BFC /* Debug */ = {
+		649A6FE829AEADFE002C1BFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -520,7 +520,7 @@
 			};
 			name = Debug;
 		};
-		649A6FB329AEAA7C002C1BFC /* Release */ = {
+		649A6FE929AEADFE002C1BFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -540,43 +540,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		649A6F8229AEAA7B002C1BFC /* Build configuration list for PBXProject "HejtoBuzz" */ = {
+		649A6FB829AEADFD002C1BFC /* Build configuration list for PBXProject "HejtoBuzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				649A6FA929AEAA7C002C1BFC /* Debug */,
-				649A6FAA29AEAA7C002C1BFC /* Release */,
+				649A6FDF29AEADFE002C1BFC /* Debug */,
+				649A6FE029AEADFE002C1BFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		649A6FAB29AEAA7C002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzz" */ = {
+		649A6FE129AEADFE002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				649A6FAC29AEAA7C002C1BFC /* Debug */,
-				649A6FAD29AEAA7C002C1BFC /* Release */,
+				649A6FE229AEADFE002C1BFC /* Debug */,
+				649A6FE329AEADFE002C1BFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		649A6FAE29AEAA7C002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzTests" */ = {
+		649A6FE429AEADFE002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				649A6FAF29AEAA7C002C1BFC /* Debug */,
-				649A6FB029AEAA7C002C1BFC /* Release */,
+				649A6FE529AEADFE002C1BFC /* Debug */,
+				649A6FE629AEADFE002C1BFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		649A6FB129AEAA7C002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzUITests" */ = {
+		649A6FE729AEADFE002C1BFC /* Build configuration list for PBXNativeTarget "HejtoBuzzUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				649A6FB229AEAA7C002C1BFC /* Debug */,
-				649A6FB329AEAA7C002C1BFC /* Release */,
+				649A6FE829AEADFE002C1BFC /* Debug */,
+				649A6FE929AEADFE002C1BFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 649A6F7F29AEAA7B002C1BFC /* Project object */;
+	rootObject = 649A6FB529AEADFD002C1BFC /* Project object */;
 }
