@@ -58,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64641FC629AFDFD400120470 /* OptionalAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +172,9 @@
 			dependencies = (
 			);
 			name = HejtoBuzz;
+			packageProductDependencies = (
+				64641FC529AFDFD400120470 /* OptionalAPI */,
+			);
 			productName = HejtoBuzz;
 			productReference = 649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */;
 			productType = "com.apple.product-type.application";
@@ -243,6 +247,9 @@
 				Base,
 			);
 			mainGroup = 649A6FB429AEADFD002C1BFC;
+			packageReferences = (
+				64641FC429AFDFD400120470 /* XCRemoteSwiftPackageReference "OptionalAPI" */,
+			);
 			productRefGroup = 649A6FBE29AEADFD002C1BFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -609,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64641FC429AFDFD400120470 /* XCRemoteSwiftPackageReference "OptionalAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sloik/OptionalAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64641FC529AFDFD400120470 /* OptionalAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64641FC429AFDFD400120470 /* XCRemoteSwiftPackageReference "OptionalAPI" */;
+			productName = OptionalAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 649A6FB529AEADFD002C1BFC /* Project object */;
 }
