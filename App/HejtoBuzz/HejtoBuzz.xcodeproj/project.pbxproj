@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FC129AFDAC700120470 /* AuthenticationViews.swift */; };
+		64641FC629AFDFD400120470 /* OptionalAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 64641FC529AFDFD400120470 /* OptionalAPI */; };
+		64641FD029AFE7AA00120470 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FCD29AFE6EA00120470 /* Secrets.swift */; };
 		649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */; };
 		649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC229AEADFD002C1BFC /* ContentView.swift */; };
 		649A6FC529AEADFE002C1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6FC429AEADFE002C1BFC /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		64641FC029AFBE9500120470 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
+		64641FC129AFDAC700120470 /* AuthenticationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViews.swift; sourceTree = "<group>"; };
+		64641FC729AFE49500120470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		64641FCD29AFE6EA00120470 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HejtoBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzApp.swift; sourceTree = "<group>"; };
 		649A6FC229AEADFD002C1BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64641FC329AFDBC600120470 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64641FC129AFDAC700120470 /* AuthenticationViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64641FCB29AFE6EA00120470 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				64641FCD29AFE6EA00120470 /* Secrets.swift */,
+			);
+			name = Secrets;
+			path = ../../../Sources/Secrets;
+			sourceTree = "<group>";
+		};
 		649A6FB429AEADFD002C1BFC = {
 			isa = PBXGroup;
 			children = (
@@ -96,10 +119,13 @@
 		649A6FBF29AEADFD002C1BFC /* HejtoBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */,
+				64641FCB29AFE6EA00120470 /* Secrets */,
+				64641FC729AFE49500120470 /* Info.plist */,
 				649A6FC229AEADFD002C1BFC /* ContentView.swift */,
+				649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */,
 				649A6FC429AEADFE002C1BFC /* Assets.xcassets */,
 				649A6FC629AEADFE002C1BFC /* Preview Content */,
+				64641FC329AFDBC600120470 /* Views */,
 			);
 			path = HejtoBuzz;
 			sourceTree = "<group>";
@@ -260,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */,
+				64641FD029AFE7AA00120470 /* Secrets.swift in Sources */,
 				649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */,
+				64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +449,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HejtoBuzz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HejtoBuzz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +478,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HejtoBuzz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HejtoBuzz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
