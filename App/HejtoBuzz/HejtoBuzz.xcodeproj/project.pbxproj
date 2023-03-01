@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64641FC029AFBE9500120470 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HejtoBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzApp.swift; sourceTree = "<group>"; };
 		649A6FC229AEADFD002C1BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		649A6FB429AEADFD002C1BFC = {
 			isa = PBXGroup;
 			children = (
+				64641FC029AFBE9500120470 /* Domain */,
 				649A6FBF29AEADFD002C1BFC /* HejtoBuzz */,
 				649A6FD029AEADFE002C1BFC /* HejtoBuzzTests */,
 				649A6FDA29AEADFE002C1BFC /* HejtoBuzzUITests */,
