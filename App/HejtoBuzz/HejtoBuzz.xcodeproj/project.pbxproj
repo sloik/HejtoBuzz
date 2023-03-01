@@ -83,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				64641FC129AFDAC700120470 /* AuthenticationViews.swift */,
+				649A6FC229AEADFD002C1BFC /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,12 +121,11 @@
 		649A6FBF29AEADFD002C1BFC /* HejtoBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				64641FCB29AFE6EA00120470 /* Secrets */,
 				64641FC729AFE49500120470 /* Info.plist */,
-				649A6FC229AEADFD002C1BFC /* ContentView.swift */,
 				649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */,
 				649A6FC429AEADFE002C1BFC /* Assets.xcassets */,
 				649A6FC629AEADFE002C1BFC /* Preview Content */,
+				64641FCB29AFE6EA00120470 /* Secrets */,
 				64641FC329AFDBC600120470 /* Views */,
 			);
 			path = HejtoBuzz;
