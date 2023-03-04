@@ -19,3 +19,14 @@ public enum Keys {
 public protocol SecretsStoreType {
     func value(for key: Keys.DeveloperPortal) -> String
 }
+
+// MARK: - Mock
+
+public final class MockSecureStore: SecretsStoreType {
+
+    public init(){}
+    
+    public func value(for key: Keys.DeveloperPortal) -> String {
+        "not implemented"
+    }
+}

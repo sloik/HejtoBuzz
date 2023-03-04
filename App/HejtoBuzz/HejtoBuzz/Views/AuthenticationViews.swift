@@ -22,20 +22,20 @@ struct AuthenticationView: View {
                 Button {
                     Task {
                         do {
-                            let result = try await session.authenticate(
-                                using: URL(string: Secrets.API.authUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
-                                                                            ,
-                                callbackURLScheme: "hejtobuzz",
-
-                                preferredBrowserSession: .ephemeral
-                            )
-
-
-                            // TODO: - get code from url
-
-                            // TODO: - make token request
-
-                            print("🛤️", result)
+//                            let result = try await session.authenticate(
+//                                using: URL(string: Secrets.API.authUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
+//                                                                            ,
+//                                callbackURLScheme: "hejtobuzz",
+//
+//                                preferredBrowserSession: .ephemeral
+//                            )
+//
+//
+//                            // TODO: - get code from url
+//
+//                            // TODO: - make token request
+//
+//                            print("🛤️", result)
 
                         } catch {
                             // TODO: Handle error
