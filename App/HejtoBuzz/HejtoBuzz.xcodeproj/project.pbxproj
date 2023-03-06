@@ -12,7 +12,6 @@
 		640ECDC529B3F94E00D7F131 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; };
 		640ECDC629B3F94E00D7F131 /* Domain in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FC129AFDAC700120470 /* AuthenticationViews.swift */; };
-		64641FC629AFDFD400120470 /* OptionalAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 64641FC529AFDFD400120470 /* OptionalAPI */; };
 		649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */; };
 		649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC229AEADFD002C1BFC /* ContentView.swift */; };
 		649A6FC529AEADFE002C1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6FC429AEADFE002C1BFC /* Assets.xcassets */; };
@@ -79,7 +78,6 @@
 			files = (
 				640ECDC529B3F94E00D7F131 /* Domain in Frameworks */,
 				640ECDC129B3F94900D7F131 /* SecretsStore in Frameworks */,
-				64641FC629AFDFD400120470 /* OptionalAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +201,6 @@
 			);
 			name = HejtoBuzz;
 			packageProductDependencies = (
-				64641FC529AFDFD400120470 /* OptionalAPI */,
 				640ECDC029B3F94900D7F131 /* SecretsStore */,
 				640ECDC429B3F94E00D7F131 /* Domain */,
 			);
@@ -280,7 +277,6 @@
 			);
 			mainGroup = 649A6FB429AEADFD002C1BFC;
 			packageReferences = (
-				64641FC429AFDFD400120470 /* XCRemoteSwiftPackageReference "OptionalAPI" */,
 			);
 			productRefGroup = 649A6FBE29AEADFD002C1BFC /* Products */;
 			projectDirPath = "";
@@ -485,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HejtoBuzz/Preview Content\"";
+				DEVELOPMENT_TEAM = Q79FTA4VEX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HejtoBuzz/Info.plist;
@@ -514,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HejtoBuzz/Preview Content\"";
+				DEVELOPMENT_TEAM = Q79FTA4VEX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HejtoBuzz/Info.plist;
@@ -648,17 +646,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		64641FC429AFDFD400120470 /* XCRemoteSwiftPackageReference "OptionalAPI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sloik/OptionalAPI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		640ECDC029B3F94900D7F131 /* SecretsStore */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -667,11 +654,6 @@
 		640ECDC429B3F94E00D7F131 /* Domain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Domain;
-		};
-		64641FC529AFDFD400120470 /* OptionalAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 64641FC429AFDFD400120470 /* XCRemoteSwiftPackageReference "OptionalAPI" */;
-			productName = OptionalAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
