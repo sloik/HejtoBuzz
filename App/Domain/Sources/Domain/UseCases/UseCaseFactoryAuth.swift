@@ -3,7 +3,7 @@ import Foundation
 
 extension UseCaseFactory {
 
-
+    /// Use case for handling OAuth flow.
     struct Auth {
 
     }
