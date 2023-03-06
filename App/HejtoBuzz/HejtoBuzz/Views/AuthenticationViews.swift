@@ -47,7 +47,7 @@ struct AuthenticationView: View {
                 }
             }
 
-            if self.result.isSome {
+            if self.result != nil {
                 Text("🎉").font(.title)
             } else {
                 ProgressView().progressViewStyle(.circular)
