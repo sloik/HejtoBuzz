@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640ECDC129B3F94900D7F131 /* SecretsStore in Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC029B3F94900D7F131 /* SecretsStore */; };
+		640ECDC229B3F94900D7F131 /* SecretsStore in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC029B3F94900D7F131 /* SecretsStore */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		640ECDC529B3F94E00D7F131 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; };
+		640ECDC629B3F94E00D7F131 /* Domain in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FC129AFDAC700120470 /* AuthenticationViews.swift */; };
 		64641FC629AFDFD400120470 /* OptionalAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 64641FC529AFDFD400120470 /* OptionalAPI */; };
-		64641FD029AFE7AA00120470 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FCD29AFE6EA00120470 /* Secrets.swift */; };
 		649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */; };
 		649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC229AEADFD002C1BFC /* ContentView.swift */; };
 		649A6FC529AEADFE002C1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6FC429AEADFE002C1BFC /* Assets.xcassets */; };
@@ -36,11 +39,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		640ECDC329B3F94900D7F131 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				640ECDC629B3F94E00D7F131 /* Domain in Embed Frameworks */,
+				640ECDC229B3F94900D7F131 /* SecretsStore in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		64641FC029AFBE9500120470 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
+		640ECDBC29B3F4AE00D7F131 /* SecretsStore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SecretsStore; path = ../SecretsStore; sourceTree = "<group>"; };
+		640ECDBD29B3F4E700D7F131 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Domain; path = ../Domain; sourceTree = "<group>"; };
+		640ECDBE29B3F7FF00D7F131 /* SecretsStore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SecretsStore; path = ../SecretsStore; sourceTree = "<group>"; };
 		64641FC129AFDAC700120470 /* AuthenticationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViews.swift; sourceTree = "<group>"; };
 		64641FC729AFE49500120470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		64641FCD29AFE6EA00120470 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HejtoBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzApp.swift; sourceTree = "<group>"; };
 		649A6FC229AEADFD002C1BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640ECDC529B3F94E00D7F131 /* Domain in Frameworks */,
+				640ECDC129B3F94900D7F131 /* SecretsStore in Frameworks */,
 				64641FC629AFDFD400120470 /* OptionalAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640ECDBB29B3F4AE00D7F131 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				640ECDBC29B3F4AE00D7F131 /* SecretsStore */,
+				640ECDBD29B3F4E700D7F131 /* Domain */,
+				640ECDBE29B3F7FF00D7F131 /* SecretsStore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		640ECDBF29B3F94900D7F131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64641FC329AFDBC600120470 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,23 +126,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		64641FCB29AFE6EA00120470 /* Secrets */ = {
-			isa = PBXGroup;
-			children = (
-				64641FCD29AFE6EA00120470 /* Secrets.swift */,
-			);
-			name = Secrets;
-			path = ../../../Sources/Secrets;
-			sourceTree = "<group>";
-		};
 		649A6FB429AEADFD002C1BFC = {
 			isa = PBXGroup;
 			children = (
-				64641FC029AFBE9500120470 /* Domain */,
+				640ECDBB29B3F4AE00D7F131 /* Packages */,
 				649A6FBF29AEADFD002C1BFC /* HejtoBuzz */,
 				649A6FD029AEADFE002C1BFC /* HejtoBuzzTests */,
 				649A6FDA29AEADFE002C1BFC /* HejtoBuzzUITests */,
 				649A6FBE29AEADFD002C1BFC /* Products */,
+				640ECDBF29B3F94900D7F131 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +155,6 @@
 				649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */,
 				649A6FC429AEADFE002C1BFC /* Assets.xcassets */,
 				649A6FC629AEADFE002C1BFC /* Preview Content */,
-				64641FCB29AFE6EA00120470 /* Secrets */,
 				64641FC329AFDBC600120470 /* Views */,
 			);
 			path = HejtoBuzz;
@@ -166,6 +195,7 @@
 				649A6FB929AEADFD002C1BFC /* Sources */,
 				649A6FBA29AEADFD002C1BFC /* Frameworks */,
 				649A6FBB29AEADFD002C1BFC /* Resources */,
+				640ECDC329B3F94900D7F131 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +204,8 @@
 			name = HejtoBuzz;
 			packageProductDependencies = (
 				64641FC529AFDFD400120470 /* OptionalAPI */,
+				640ECDC029B3F94900D7F131 /* SecretsStore */,
+				640ECDC429B3F94E00D7F131 /* Domain */,
 			);
 			productName = HejtoBuzz;
 			productReference = 649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */;
@@ -293,7 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */,
-				64641FD029AFE7AA00120470 /* Secrets.swift in Sources */,
 				649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */,
 				64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */,
 			);
@@ -629,6 +660,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		640ECDC029B3F94900D7F131 /* SecretsStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SecretsStore;
+		};
+		640ECDC429B3F94E00D7F131 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
 		64641FC529AFDFD400120470 /* OptionalAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 64641FC429AFDFD400120470 /* XCRemoteSwiftPackageReference "OptionalAPI" */;

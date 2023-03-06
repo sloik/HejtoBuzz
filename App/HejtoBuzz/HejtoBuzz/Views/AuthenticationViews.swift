@@ -2,6 +2,7 @@
 import Foundation
 import AuthenticationServices
 import SwiftUI
+import Domain
 import OptionalAPI
 
 struct AuthenticationView: View {
@@ -23,19 +24,19 @@ struct AuthenticationView: View {
                     Task {
                         do {
                             let result = try await session.authenticate(
-                                using: URL(string: Secrets.API.authUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
+                                using: URL(string: Current.secureStore.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
                                                                             ,
                                 callbackURLScheme: "hejtobuzz",
 
                                 preferredBrowserSession: .ephemeral
                             )
-
-
-                            // TODO: - get code from url
-
-                            // TODO: - make token request
-
-                            print("🛤️", result)
+//
+//
+//                            // TODO: - get code from url
+//
+//                            // TODO: - make token request
+//
+//                            print("🛤️", result)
 
                         } catch {
                             // TODO: Handle error
