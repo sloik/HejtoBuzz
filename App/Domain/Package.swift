@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "Domain",
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v16),
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -15,7 +19,8 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(path: "../SecretsStore")
+        .package(path: "../SecretsStore"),
+        .package(url: "https://github.com/sloik/OptionalAPI", from: "5.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -23,7 +28,8 @@ let package = Package(
         .target(
             name: "Domain",
             dependencies: [
-                "SecretsStore"
+                "SecretsStore",
+                "OptionalAPI",
             ]),
         .testTarget(
             name: "DomainTests",
