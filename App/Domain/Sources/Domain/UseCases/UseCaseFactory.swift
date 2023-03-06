@@ -3,6 +3,18 @@ import Foundation
 
 public struct UseCaseFactory {
 
+    var _auth: Auth
+
+    init(
+        auth: UseCaseFactory.Auth
+    ) {
+        self._auth = auth
+    }
+}
+
+extension UseCaseFactory {
+
+    var auth: Auth { _auth }
 }
 
 
@@ -15,6 +27,6 @@ extension UseCaseFactory {
     }
 
     static var mock: Self {
-        .init()
+        .init(auth: .mock)
     }
 }
