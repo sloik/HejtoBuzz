@@ -12,7 +12,7 @@ public struct UseCaseFactory {
     }
 }
 
-extension UseCaseFactory {
+public extension UseCaseFactory {
 
     var auth: Auth { _auth }
 }
