@@ -31,7 +31,7 @@ public extension UseCaseFactory.Auth {
     var accessToken: String? { token?.accessToken }
 
     func parseResultAndGetUserToken(from url: URL) {
-
+        _parseResultAndGetUserToken(url)
     }
 }
 
