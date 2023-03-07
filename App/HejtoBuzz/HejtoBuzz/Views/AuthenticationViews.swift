@@ -3,7 +3,6 @@ import Foundation
 import AuthenticationServices
 import SwiftUI
 import Domain
-import OptionalAPI
 
 struct AuthenticationView: View {
 
@@ -30,13 +29,11 @@ struct AuthenticationView: View {
 
                                 preferredBrowserSession: .ephemeral
                             )
-//
-//
-//                            // TODO: - get code from url
-//
-//                            // TODO: - make token request
-//
-//                            print("🛤️", result)
+
+                            Current
+                                .useCases
+                                .auth
+                                .parseResultAndGetUserToken(from: result)
 
                         } catch {
                             // TODO: Handle error
@@ -50,7 +47,7 @@ struct AuthenticationView: View {
                 }
             }
 
-            if self.result.isSome {
+            if self.result != nil {
                 Text("🎉").font(.title)
             } else {
                 ProgressView().progressViewStyle(.circular)
