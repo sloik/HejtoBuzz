@@ -93,3 +93,4 @@ iOSInjectionProject/
 /Package.resolved
 Sources/Secrets/**/*
 App/HejtoBuzz/_Secrets/**/*
+App/HejtoBuzz/HejtoBuzz/_Secrets/**/*
