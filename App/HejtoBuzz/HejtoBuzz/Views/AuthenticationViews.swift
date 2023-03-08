@@ -23,7 +23,7 @@ struct AuthenticationView: View {
                     Task {
                         do {
                             let result = try await session.authenticate(
-                                using: URL(string: Current.features.secureStore.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
+                                using: URL(string: Current.features.secrets.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
                                                                             ,
                                 callbackURLScheme: "hejtobuzz",
 

@@ -4,13 +4,13 @@ import SecretsStore
 
 public struct FeaturesFactory {
     var _inMemoryStore: InMemoryStore
-    var _secureStore: SecretsStoreType
+    var _secrets: SecretsStoreType
 
     init(
-        secureStore: SecretsStoreType,
+        secrets: SecretsStoreType,
         inMemoryStore: FeaturesFactory.InMemoryStore
     ) {
-        self._secureStore = secureStore
+        self._secrets = secrets
         self._inMemoryStore = inMemoryStore
     }
 }
@@ -19,22 +19,22 @@ extension FeaturesFactory {
     var inMemoryStore: InMemoryStore { _inMemoryStore }
 
     /// Gets current secret store.
-    public var secureStore: SecretsStoreType { _secureStore }
+    public var secrets: SecretsStoreType { _secrets }
 }
 
 // MARK: - Mock
 
 extension FeaturesFactory {
-    static func prod(secureStore: SecretsStoreType) -> Self {
+    static func prod(secrets: SecretsStoreType) -> Self {
         .init(
-            secureStore: secureStore,
+            secrets: secrets,
             inMemoryStore: .prod
         )
     }
 
     static var mock: Self {
         .init(
-            secureStore:  MockSecureStore(),
+            secrets:  MockSecureStore(),
             inMemoryStore: .mock
         )
     }

@@ -29,10 +29,10 @@ public extension World {
 
 public extension World {
 
-    static func takeOff(secureStore: SecretsStoreType) {
+    static func takeOff(secrets: SecretsStoreType) {
         Current = World(
             useCases: .prod,
-            features: .prod(secureStore: secureStore)
+            features: .prod(secrets: secrets)
         )
     }
 
