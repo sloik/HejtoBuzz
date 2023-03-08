@@ -30,10 +30,12 @@ struct AuthenticationView: View {
                                 preferredBrowserSession: .ephemeral
                             )
 
-                            Current
+                            try await Current
                                 .useCases
                                 .auth
                                 .parseResultAndGetUserToken(from: result)
+
+                            self.result = "Did login"
 
                         } catch {
                             // TODO: Handle error
