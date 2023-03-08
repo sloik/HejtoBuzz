@@ -23,3 +23,8 @@ public struct Token: Codable {
     }
 }
 
+extension Token {
+    static var mock: Self {
+        .init(tokenType: .bearer, expiresIn: 3600, accessToken: "fake-access-token")
+    }
+}
