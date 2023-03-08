@@ -22,6 +22,8 @@ public struct World {
 
 extension World {
 
+    var api: HejtoAPI { _api }
+
     public var useCases: UseCaseFactory { _useCases }
 
     public var features: FeaturesFactory { _features }
