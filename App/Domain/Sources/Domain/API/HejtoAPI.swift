@@ -15,7 +15,7 @@ struct HejtoAPI {
 // MARK: - Nice API
 
 extension HejtoAPI {
-
+    var auth: Auth { _auth }
 }
 
 // MARK: - Factory
