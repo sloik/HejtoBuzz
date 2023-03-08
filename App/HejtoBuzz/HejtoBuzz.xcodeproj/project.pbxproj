@@ -12,6 +12,7 @@
 		640ECDC529B3F94E00D7F131 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; };
 		640ECDC629B3F94E00D7F131 /* Domain in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FC129AFDAC700120470 /* AuthenticationViews.swift */; };
+		6466DE3529B7EFC500A95BF0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466DE3429B7EFC500A95BF0 /* Secrets.swift */; };
 		649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */; };
 		649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC229AEADFD002C1BFC /* ContentView.swift */; };
 		649A6FC529AEADFE002C1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6FC429AEADFE002C1BFC /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		640ECDBE29B3F7FF00D7F131 /* SecretsStore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SecretsStore; path = ../SecretsStore; sourceTree = "<group>"; };
 		64641FC129AFDAC700120470 /* AuthenticationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViews.swift; sourceTree = "<group>"; };
 		64641FC729AFE49500120470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6466DE3429B7EFC500A95BF0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HejtoBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzApp.swift; sourceTree = "<group>"; };
 		649A6FC229AEADFD002C1BFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6466DE3329B7EFC500A95BF0 /* _Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				6466DE3429B7EFC500A95BF0 /* Secrets.swift */,
+			);
+			path = _Secrets;
+			sourceTree = "<group>";
+		};
 		649A6FB429AEADFD002C1BFC = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 				64641FC729AFE49500120470 /* Info.plist */,
 				649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */,
 				649A6FC429AEADFE002C1BFC /* Assets.xcassets */,
+				6466DE3329B7EFC500A95BF0 /* _Secrets */,
 				649A6FC629AEADFE002C1BFC /* Preview Content */,
 				64641FC329AFDBC600120470 /* Views */,
 			);
@@ -321,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */,
+				6466DE3529B7EFC500A95BF0 /* Secrets.swift in Sources */,
 				649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */,
 				64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */,
 			);
