@@ -5,46 +5,45 @@ public private(set) var Current = World.mock
 
 public struct World {
 
-    var _secureStore: SecretsStoreType
+    var _api: HejtoAPI
     var _useCases: UseCaseFactory
     var _features: FeaturesFactory
 
     init(
-        secureStore: SecretsStoreType,
+        api: HejtoAPI,
         useCases: UseCaseFactory,
         features: FeaturesFactory
     ) {
-        self._secureStore = secureStore
+        self._api = api
         self._useCases = useCases
         self._features = features
     }
 }
 
-public extension World {
+extension World {
 
-    /// Gets current secret store.
-    var secureStore: SecretsStoreType { _secureStore }
+    var api: HejtoAPI { _api }
 
-    var useCases: UseCaseFactory { _useCases }
+    public var useCases: UseCaseFactory { _useCases }
 
-    var features: FeaturesFactory { _features }
+    public var features: FeaturesFactory { _features }
 }
 
 // MARK: - Mock
 
 public extension World {
 
-    static func takeOff(secureStore: SecretsStoreType) {
+    static func takeOff(secrets: SecretsStoreType) {
         Current = World(
-            secureStore: secureStore,
+            api: .prod,
             useCases: .prod,
-            features: .prod
+            features: .prod(secrets: secrets)
         )
     }
 
     static var mock: World {
         .init(
-            secureStore: MockSecureStore(),
+            api: .mock,
             useCases: .mock,
             features: .mock
         )

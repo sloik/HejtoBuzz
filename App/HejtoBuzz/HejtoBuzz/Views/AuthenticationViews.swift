@@ -23,17 +23,19 @@ struct AuthenticationView: View {
                     Task {
                         do {
                             let result = try await session.authenticate(
-                                using: URL(string: Current.secureStore.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
+                                using: URL(string: Current.features.secrets.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
                                                                             ,
                                 callbackURLScheme: "hejtobuzz",
 
                                 preferredBrowserSession: .ephemeral
                             )
 
-                            Current
+                            try await Current
                                 .useCases
                                 .auth
                                 .parseResultAndGetUserToken(from: result)
+
+                            self.result = "Did login"
 
                         } catch {
                             // TODO: Handle error

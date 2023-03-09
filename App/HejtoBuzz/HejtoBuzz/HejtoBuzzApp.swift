@@ -7,7 +7,7 @@ import SecretsStore
 struct HejtoBuzzApp: App {
 
     init() {
-        World.takeOff(secureStore: ProductionSecretsStore())
+        World.takeOff(secrets: ProductionSecretsStore())
     }
 
     var body: some Scene {

@@ -8,11 +8,11 @@ extension UseCaseFactory {
     /// Use case for handling OAuth flow.
     public struct Auth {
         var _currentToken: Producer<Token?>
-        var _parseResultAndGetUserToken: Consumer<URL>
+        var _parseResultAndGetUserToken: AsyncThrowsConsumer<URL>
 
         init(
             currentToken: @escaping Producer<Token?>,
-            parseResultAndGetUserToken: @escaping Consumer<URL>
+            parseResultAndGetUserToken: @escaping AsyncThrowsConsumer<URL>
         ) {
             self._currentToken = currentToken
             self._parseResultAndGetUserToken = parseResultAndGetUserToken
@@ -30,8 +30,8 @@ public extension UseCaseFactory.Auth {
 
     var accessToken: String? { token?.accessToken }
 
-    func parseResultAndGetUserToken(from url: URL) {
-        _parseResultAndGetUserToken(url)
+    func parseResultAndGetUserToken(from url: URL) async throws {
+        try await _parseResultAndGetUserToken(url)
     }
 }
 
@@ -60,22 +60,21 @@ extension UseCaseFactory.Auth {
             Current.features.inMemoryStore.object(for: .token)
         }
 
-        static func parseResultAndGetUserToken(_ url: URL) {
+        static func parseResultAndGetUserToken(_ url: URL) async throws {
 
-            Task {
-                // Extracts code from URL
-                await URLComponents(url: url, resolvingAgainstBaseURL: false)?
-                    .queryItems?
-                    .first(where: { $0.name == "code" })?
-                    .value
-                // Get the token from API
-                    .asyncMap { (authCode: String) -> Token? in
-                            .none
-                    }?
-                    .whenSome( Current.features.inMemoryStore.set(for: .token) )
+            // Extracts code from URL
+            await URLComponents(url: url, resolvingAgainstBaseURL: false)?
+                .queryItems?
+                .first(where: { $0.name == "code" })?
+                .value
+            // Get the token from API
+                .asyncMap { (authCode: String) -> Token? in
+                    try? await Current.api.auth.getToken(code: authCode)
+                }?
+                .whenSome( Current.features.inMemoryStore.set(for: .token) )
 
-            }
-
+            // Probably some errors should be thrown. OptionalAPI need
+            // asyncThrowsMap or something. Later `throwOrGetValue` could be used.
         }
     }
 }

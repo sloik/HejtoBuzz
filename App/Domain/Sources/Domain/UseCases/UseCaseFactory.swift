@@ -17,7 +17,6 @@ public extension UseCaseFactory {
     var auth: Auth { _auth }
 }
 
-
 // MARK: - Mock
 
 extension UseCaseFactory {
