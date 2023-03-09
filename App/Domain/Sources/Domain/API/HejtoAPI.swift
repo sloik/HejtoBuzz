@@ -37,7 +37,7 @@ extension HejtoAPI {
 // MARK: - ERROR
 
 extension HejtoAPI {
-    enum Err: Error {
+    enum E: Error {
         case notHttpResponse
         case expectedHttp200(code: Int)
     }

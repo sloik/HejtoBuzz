@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		640ECDC129B3F94900D7F131 /* SecretsStore in Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC029B3F94900D7F131 /* SecretsStore */; };
-		640ECDC229B3F94900D7F131 /* SecretsStore in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC029B3F94900D7F131 /* SecretsStore */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		640ECDC529B3F94E00D7F131 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; };
 		640ECDC629B3F94E00D7F131 /* Domain in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 640ECDC429B3F94E00D7F131 /* Domain */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		642EB76C29BA8ED10024F16E /* SecretsStore in Frameworks */ = {isa = PBXBuildFile; productRef = 642EB76B29BA8ED10024F16E /* SecretsStore */; };
+		642EB76D29BA8ED10024F16E /* SecretsStore in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 642EB76B29BA8ED10024F16E /* SecretsStore */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FC129AFDAC700120470 /* AuthenticationViews.swift */; };
 		6466DE3529B7EFC500A95BF0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466DE3429B7EFC500A95BF0 /* Secrets.swift */; };
 		649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */; };
@@ -46,8 +46,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				642EB76D29BA8ED10024F16E /* SecretsStore in Embed Frameworks */,
 				640ECDC629B3F94E00D7F131 /* Domain in Embed Frameworks */,
-				640ECDC229B3F94900D7F131 /* SecretsStore in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +57,6 @@
 /* Begin PBXFileReference section */
 		640ECDBC29B3F4AE00D7F131 /* SecretsStore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SecretsStore; path = ../SecretsStore; sourceTree = "<group>"; };
 		640ECDBD29B3F4E700D7F131 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Domain; path = ../Domain; sourceTree = "<group>"; };
-		640ECDBE29B3F7FF00D7F131 /* SecretsStore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SecretsStore; path = ../SecretsStore; sourceTree = "<group>"; };
 		64641FC129AFDAC700120470 /* AuthenticationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViews.swift; sourceTree = "<group>"; };
 		64641FC729AFE49500120470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6466DE3429B7EFC500A95BF0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
@@ -78,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642EB76C29BA8ED10024F16E /* SecretsStore in Frameworks */,
 				640ECDC529B3F94E00D7F131 /* Domain in Frameworks */,
-				640ECDC129B3F94900D7F131 /* SecretsStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +104,6 @@
 			children = (
 				640ECDBC29B3F4AE00D7F131 /* SecretsStore */,
 				640ECDBD29B3F4E700D7F131 /* Domain */,
-				640ECDBE29B3F7FF00D7F131 /* SecretsStore */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -212,8 +210,8 @@
 			);
 			name = HejtoBuzz;
 			packageProductDependencies = (
-				640ECDC029B3F94900D7F131 /* SecretsStore */,
 				640ECDC429B3F94E00D7F131 /* Domain */,
+				642EB76B29BA8ED10024F16E /* SecretsStore */,
 			);
 			productName = HejtoBuzz;
 			productReference = 649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */;
@@ -659,13 +657,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		640ECDC029B3F94900D7F131 /* SecretsStore */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SecretsStore;
-		};
 		640ECDC429B3F94E00D7F131 /* Domain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Domain;
+		};
+		642EB76B29BA8ED10024F16E /* SecretsStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SecretsStore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

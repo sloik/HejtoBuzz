@@ -1,15 +1,15 @@
 
 import Foundation
 import AliasWonderland
+import OptionalAPI
 
 extension HejtoAPI {
 
     struct Auth {
         var _getTokenCode: AsyncThrowsClosure<String,Token>
 
-
         init(
-            getTokenCode: @escaping AsyncThrowsClosure<String, Token>
+            getTokenCode: @escaping AsyncThrowsClosure<String,Token>
         ) {
             self._getTokenCode = getTokenCode
         }
@@ -86,16 +86,14 @@ extension HejtoAPI.Auth {
 
             let (data, response) = try await URLSession.shared.data(for: request)
 
-            guard
-                let httpResponse = response as? HTTPURLResponse
-            else {
-                throw HejtoAPI.Err.notHttpResponse
-            }
+
+            let httpResponse = try cast(response, to: HTTPURLResponse.self)
+                .throwOrGetValue { HejtoAPI.E.notHttpResponse }
 
             guard
                 200..<300 ~= httpResponse.statusCode
             else {
-                throw HejtoAPI.Err.expectedHttp200(code: httpResponse.statusCode)
+                throw HejtoAPI.E.expectedHttp200(code: httpResponse.statusCode)
             }
 
             let token = try JSONDecoder().decode(Token.self, from: data)
