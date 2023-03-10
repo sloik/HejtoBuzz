@@ -14,6 +14,7 @@
 		64641FC229AFDAC700120470 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641FC129AFDAC700120470 /* AuthenticationViews.swift */; };
 		6466DE3529B7EFC500A95BF0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466DE3429B7EFC500A95BF0 /* Secrets.swift */; };
 		647AFFD029BB6F7300B754E1 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647AFFCF29BB6F7300B754E1 /* NextView.swift */; };
+		647AFFD329BB832200B754E1 /* OptionalAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 647AFFD229BB832200B754E1 /* OptionalAPI */; };
 		649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC029AEADFD002C1BFC /* HejtoBuzzApp.swift */; };
 		649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FC229AEADFD002C1BFC /* ContentView.swift */; };
 		649A6FC529AEADFE002C1BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649A6FC429AEADFE002C1BFC /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 			files = (
 				642EB76C29BA8ED10024F16E /* SecretsStore in Frameworks */,
 				640ECDC529B3F94E00D7F131 /* Domain in Frameworks */,
+				647AFFD329BB832200B754E1 /* OptionalAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +217,7 @@
 			packageProductDependencies = (
 				640ECDC429B3F94E00D7F131 /* Domain */,
 				642EB76B29BA8ED10024F16E /* SecretsStore */,
+				647AFFD229BB832200B754E1 /* OptionalAPI */,
 			);
 			productName = HejtoBuzz;
 			productReference = 649A6FBD29AEADFD002C1BFC /* HejtoBuzz.app */;
@@ -289,6 +292,7 @@
 			);
 			mainGroup = 649A6FB429AEADFD002C1BFC;
 			packageReferences = (
+				647AFFD129BB832200B754E1 /* XCRemoteSwiftPackageReference "OptionalAPI" */,
 			);
 			productRefGroup = 649A6FBE29AEADFD002C1BFC /* Products */;
 			projectDirPath = "";
@@ -660,6 +664,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		647AFFD129BB832200B754E1 /* XCRemoteSwiftPackageReference "OptionalAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sloik/OptionalAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		640ECDC429B3F94E00D7F131 /* Domain */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -668,6 +683,11 @@
 		642EB76B29BA8ED10024F16E /* SecretsStore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SecretsStore;
+		};
+		647AFFD229BB832200B754E1 /* OptionalAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647AFFD129BB832200B754E1 /* XCRemoteSwiftPackageReference "OptionalAPI" */;
+			productName = OptionalAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
