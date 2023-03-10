@@ -3,6 +3,7 @@ import Foundation
 import AuthenticationServices
 import SwiftUI
 import Domain
+import OptionalAPI
 
 struct AuthenticationView: View {
 
@@ -10,6 +11,7 @@ struct AuthenticationView: View {
     var session
 
     @State var showError: Bool = false
+    @State var showedError: Error? = nil
 
     @State private var navPath = NavigationPath()
 
@@ -36,14 +38,22 @@ struct AuthenticationView: View {
                                 .auth
                                 .parseResultAndGetUserToken(from: result)
 
-                            navPath.append( Current.useCases.auth.token! )
+                            Current.useCases.auth.token
+                                .andThen { token in navPath.append(token) }
 
                         } catch {
-                            // TODO: Handle error
-                            dump(error)
+                            print("💥", error)
+                            self.showedError = error
                             self.showError = true
                         }
                     }
+                }
+                .alert(isPresented: $showError) {
+                    Alert(
+                        title: Text("Error"),
+                        message: Text(String(describing: showedError!)),
+                        dismissButton: .default(Text("OK"))
+                    )
                 }
             }
             .navigationDestination(for: Optional<Token>.self) { _ in
