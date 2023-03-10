@@ -9,22 +9,23 @@ struct AuthenticationView: View {
     @Environment(\.webAuthenticationSession)
     var session
 
-//    @StateObject private var model: Int = 42
-
-    @State var result: String? = .none
     @State var showError: Bool = false
-    @State var processing: Bool = false
 
+    @State private var navPath = NavigationPath()
 
     var body: some View {
-        List {
-            Section {
-                Button {
+
+        NavigationStack(path: $navPath) {
+            VStack {
+                Text("We do not store your login credentials or use it in any way.")
+
+                Button("Authorise BTN") {
+
                     Task {
                         do {
                             let result = try await session.authenticate(
                                 using: URL(string: Current.features.secrets.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
-                                                                            ,
+                                ,
                                 callbackURLScheme: "hejtobuzz",
 
                                 preferredBrowserSession: .ephemeral
@@ -35,7 +36,7 @@ struct AuthenticationView: View {
                                 .auth
                                 .parseResultAndGetUserToken(from: result)
 
-                            self.result = "Did login"
+                            navPath.append( Current.useCases.auth.token! )
 
                         } catch {
                             // TODO: Handle error
@@ -43,18 +44,14 @@ struct AuthenticationView: View {
                             self.showError = true
                         }
                     }
-
-                } label: {
-                    Text("Authorise")
                 }
             }
-
-            if self.result != nil {
-                Text("🎉").font(.title)
-            } else {
-                ProgressView().progressViewStyle(.circular)
+            .navigationDestination(for: Optional<Token>.self) { _ in
+                NextView()
             }
+            .navigationTitle("Login to hejto.pl")
         }
     }
 }
+
 
