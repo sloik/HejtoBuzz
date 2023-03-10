@@ -20,7 +20,8 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(path: "../SecretsStore"),
-        .package(url: "https://github.com/sloik/OptionalAPI", from: "5.0.0")
+        .package(url: "https://github.com/sloik/OptionalAPI", from: "5.0.0"),
+        .package(url: "https://github.com/sloik/SweetURL", branch: "main"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -30,6 +31,7 @@ let package = Package(
             dependencies: [
                 "SecretsStore",
                 "OptionalAPI",
+                "SweetURL",
             ]),
         .testTarget(
             name: "DomainTests",

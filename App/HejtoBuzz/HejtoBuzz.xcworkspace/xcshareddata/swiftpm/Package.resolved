@@ -17,6 +17,15 @@
         "revision" : "7b485f448817ba7bfd3e6d5a1aeb050c57514c7a",
         "version" : "5.0.0"
       }
+    },
+    {
+      "identity" : "sweeturl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sloik/SweetURL",
+      "state" : {
+        "branch" : "main",
+        "revision" : "79217fa8149f4cbbaee1ef1b42a5c5cdc671928d"
+      }
     }
   ],
   "version" : 2
