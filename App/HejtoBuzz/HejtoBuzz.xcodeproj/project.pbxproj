@@ -22,6 +22,7 @@
 		649A6FD229AEADFE002C1BFC /* HejtoBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FD129AEADFE002C1BFC /* HejtoBuzzTests.swift */; };
 		649A6FDC29AEADFE002C1BFC /* HejtoBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FDB29AEADFE002C1BFC /* HejtoBuzzUITests.swift */; };
 		649A6FDE29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FDD29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */; };
+		696AA50229BCD8120054478B /* OptionalAPI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 647AFFD229BB832200B754E1 /* OptionalAPI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 			files = (
 				642EB76D29BA8ED10024F16E /* SecretsStore in Embed Frameworks */,
 				640ECDC629B3F94E00D7F131 /* Domain in Embed Frameworks */,
+				696AA50229BCD8120054478B /* OptionalAPI in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +75,7 @@
 		649A6FD729AEADFE002C1BFC /* HejtoBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HejtoBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		649A6FDB29AEADFE002C1BFC /* HejtoBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITests.swift; sourceTree = "<group>"; };
 		649A6FDD29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		696AA50129BCD8050054478B /* HejDTO */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = HejDTO; path = ../HejDTO; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		640ECDBB29B3F4AE00D7F131 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				696AA50129BCD8050054478B /* HejDTO */,
 				640ECDBC29B3F4AE00D7F131 /* SecretsStore */,
 				640ECDBD29B3F4E700D7F131 /* Domain */,
 			);
