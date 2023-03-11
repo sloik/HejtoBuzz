@@ -25,13 +25,12 @@ struct AuthenticationView: View {
 
                     Task {
                         do {
-                            let result = try await session.authenticate(
-                                using: URL(string: Current.features.secrets.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
-                                ,
-                                callbackURLScheme: "hejtobuzz",
-
-                                preferredBrowserSession: .ephemeral
-                            )
+                            let result = try await session
+                                .authenticate(
+                                    using: Current.features.secrets.authenticationURL,
+                                    callbackURLScheme: Current.features.secrets.callbackScheme,
+                                    preferredBrowserSession: .ephemeral
+                                )
 
                             try await Current
                                 .useCases
