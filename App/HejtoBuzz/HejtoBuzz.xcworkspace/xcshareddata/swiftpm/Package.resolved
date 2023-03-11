@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sloik/SweetURL",
       "state" : {
-        "revision" : "7154880bb02d70c4632bfa5e748e489fdeb7a67e",
-        "version" : "0.0.2"
+        "revision" : "45099e980acb6a20a4792eabb7daee8af9b27623",
+        "version" : "0.0.4"
       }
     }
   ],
