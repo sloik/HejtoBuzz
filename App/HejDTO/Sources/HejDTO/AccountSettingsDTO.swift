@@ -1,13 +1,7 @@
-//
-//  AccountSettings.swift
-//  
-//
-//  Created by Dominika Kokowicz on 11/03/2023.
-//
-
 import Foundation
 
-struct AccountSettingsDTO: Codable {
+// Get account settings documentation: https://docs.hejto.pl/#tag/Account/operation/get_account_settings
+public struct AccountSettingsDTO: Codable {
     
     enum ThemeType: String, Codable {
         case light = "light"

@@ -109,9 +109,9 @@
 		640ECDBB29B3F4AE00D7F131 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				640ECDBD29B3F4E700D7F131 /* Domain */,
 				696AA50129BCD8050054478B /* HejDTO */,
 				640ECDBC29B3F4AE00D7F131 /* SecretsStore */,
-				640ECDBD29B3F4E700D7F131 /* Domain */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
