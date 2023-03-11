@@ -1,7 +1,7 @@
 import XCTest
 @testable import HejDTO
 
-final class AccountSettingsDTOTests: XCTestCase {
+final class AccountSettingsTests: XCTestCase {
 
     func test_parsingJsonExample() throws {
 
@@ -35,10 +35,10 @@ final class AccountSettingsDTOTests: XCTestCase {
         """
 
         // Act
-        let result = try JSONDecoder().decode(AccountSettingsDTO.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(AccountSettings.self, from: jsonString.data(using: .utf8)!)
 
         // Assert
-        let expectedResult = AccountSettingsDTO(
+        let expectedResult = AccountSettings(
             theme: "string",
             subscribeNewsletter: true,
             subscribeUnreadConversationsEmails: true,
