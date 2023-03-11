@@ -6,7 +6,7 @@ import Foundation
 //    "expires_in": 86400,
 //    "access_token": "{access_token}"
 //}
-public struct Token: Codable {
+public struct Token: Codable, Equatable, Hashable {
 
     public enum TokenType: String, Codable {
         case bearer = "Bearer"

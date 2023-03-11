@@ -3,58 +3,64 @@ import Foundation
 import AuthenticationServices
 import SwiftUI
 import Domain
+import OptionalAPI
 
 struct AuthenticationView: View {
 
     @Environment(\.webAuthenticationSession)
     var session
 
-//    @StateObject private var model: Int = 42
-
-    @State var result: String? = .none
     @State var showError: Bool = false
-    @State var processing: Bool = false
+    @State var showedError: Error? = nil
 
+    @State private var navPath = NavigationPath()
 
     var body: some View {
-        List {
-            Section {
-                Button {
+
+        NavigationStack(path: $navPath) {
+            VStack {
+                Text("We do not store your login credentials or use it in any way.")
+
+                Button("Authorise BTN") {
+
                     Task {
                         do {
-                            let result = try await session.authenticate(
-                                using: URL(string: Current.features.secrets.value(for: .authenticationString).addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! )!
-                                                                            ,
-                                callbackURLScheme: "hejtobuzz",
-
-                                preferredBrowserSession: .ephemeral
-                            )
+                            let result = try await session
+                                .authenticate(
+                                    using: Current.features.secrets.authenticationURL,
+                                    callbackURLScheme: Current.features.secrets.callbackScheme,
+                                    preferredBrowserSession: .ephemeral
+                                )
 
                             try await Current
                                 .useCases
                                 .auth
                                 .parseResultAndGetUserToken(from: result)
 
-                            self.result = "Did login"
+                            Current.useCases.auth.token
+                                .andThen { token in navPath.append(token) }
 
                         } catch {
-                            // TODO: Handle error
-                            dump(error)
+                            print("💥", error)
+                            self.showedError = error
                             self.showError = true
                         }
                     }
-
-                } label: {
-                    Text("Authorise")
+                }
+                .alert(isPresented: $showError) {
+                    Alert(
+                        title: Text("Error"),
+                        message: Text(String(describing: showedError!)),
+                        dismissButton: .default(Text("OK"))
+                    )
                 }
             }
-
-            if self.result != nil {
-                Text("🎉").font(.title)
-            } else {
-                ProgressView().progressViewStyle(.circular)
+            .navigationDestination(for: Token.self) { _ in
+                NextView()
             }
+            .navigationTitle("Login to hejto.pl")
         }
     }
 }
+
 

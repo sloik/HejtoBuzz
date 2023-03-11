@@ -2,6 +2,7 @@
 import Foundation
 import AliasWonderland
 import OptionalAPI
+import SweetURL
 
 extension HejtoAPI {
 
