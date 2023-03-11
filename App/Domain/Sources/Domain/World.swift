@@ -1,7 +1,7 @@
 
 import SecretsStore
 
-public private(set) var Current = World.mock
+public var Current = World.mock
 
 public struct World {
 
