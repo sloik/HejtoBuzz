@@ -1,7 +1,7 @@
 import Foundation
 
 // Get account settings documentation: https://docs.hejto.pl/#tag/Account/operation/get_account_settings
-public struct AccountSettingsDTO: Codable {
+public struct AccountSettingsDTO: Codable, Equatable {
     
     enum ThemeType: String, Codable {
         case light = "light"
