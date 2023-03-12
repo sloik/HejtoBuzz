@@ -1,0 +1,3 @@
+# HejDTO
+
+DTO objects collection

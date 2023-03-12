@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "aliaswonderland",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sloik/AliasWonderland.git",
+      "state" : {
+        "revision" : "a7da82eda598ae09fface368fed1f5dea4c19479",
+        "version" : "3.5.8"
+      }
+    },
+    {
+      "identity" : "optionalapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sloik/OptionalAPI",
+      "state" : {
+        "revision" : "7b485f448817ba7bfd3e6d5a1aeb050c57514c7a",
+        "version" : "5.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
