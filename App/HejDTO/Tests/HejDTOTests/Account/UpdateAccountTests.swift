@@ -20,10 +20,14 @@ final class UpdateAccountTests: XCTestCase {
         """
 
         // Act
-        let result = try JSONDecoder().decode(UpdateAccount.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder()
+            .decode(
+                Account.Update.self,
+                from: jsonString.data(using: .utf8)!
+            )
 
         // Assert
-        let expectedResult = UpdateAccount(
+        let expectedResult = Account.Update(
             email: .string,
             sex: "male",
             birthday: .date2019_08_24,
