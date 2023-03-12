@@ -3,8 +3,8 @@ import Foundation
 
 extension Account.Settings {
 
-    /// https://docs.hejto.pl/#tag/Account/operation/put_account_settings
-    struct Update: Codable, Equatable {
+    /// https://docs.hejto.pl/#tag/Account/operation/patch_account_settings
+    struct UpdatePartially: Codable, Equatable {
 
         public let theme: Theme
         public let subscribeNewsletter: Bool

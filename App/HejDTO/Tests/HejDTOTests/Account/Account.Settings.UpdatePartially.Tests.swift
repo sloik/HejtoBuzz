@@ -3,7 +3,7 @@ import XCTest
 @testable import HejDTO
 import CustomDump
 
-final class AccountSettingsUpdatePartiallyTests: XCTestCase {
+final class AccountSettingsUpdateTests: XCTestCase {
 
     func test_parsingJsonExample() throws {
 
@@ -39,12 +39,12 @@ final class AccountSettingsUpdatePartiallyTests: XCTestCase {
         // Act
         let result = try JSONDecoder()
             .decode(
-                Account.Settings.Update.self,
+                Account.Settings.UpdatePartially.self,
                 from: jsonString.data(using: .utf8)!
             )
 
         // Assert
-        let expectedResult = Account.Settings.Update(
+        let expectedResult = Account.Settings.UpdatePartially(
             theme: .light,
             subscribeNewsletter: false,
             subscribeUnreadConversationsEmails: false,
