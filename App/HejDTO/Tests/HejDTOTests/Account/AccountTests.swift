@@ -88,7 +88,7 @@ final class AccountTests: XCTestCase {
             passwordRequestedAt: .date2019_08_24T141522Z,
             passwordChangedAt: .date2019_08_24T141522Z,
             controversial: true,
-            accountStats: Account.AccountStats(
+            accountStats: Account.Stats(
                 numUnreadNotifications: 0,
                 numUnreadConversations: 0,
                 numPosts: 0,

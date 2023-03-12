@@ -2,40 +2,40 @@
 import Foundation
 
 /// https://docs.hejto.pl/#tag/Account/operation/get_account
-struct Account: Codable, Equatable {
-    let username: String
-    let email: String
-    let birthday: String
-    let sex: String
-    let description: String
-    let city: String
-    let avatar: Avatar
-    let background: Background
-    let status: String
-    let passwordRequestedAt: String
-    let passwordChangedAt: String
-    let controversial: Bool
-    let accountStats: AccountStats
-    let lastActivity: String
-    let referralCode: String
-    let usedReferralCode: String
-    let currentRank: String
-    let currentColor: String
-    let nextRank: String
-    let nextColor: String
-    let rankProgress: String
-    let verified: Bool
-    let sponsor: Bool
-    let theme: String
-    let showNSFW: Bool
-    let showControversial: Bool
-    let showWarContent: Bool
-    let blurNSFW: Bool
-    let defaultSort: String
-    let defaultPostType: String
-    let defaultCommunity: String
-    let createdAt: String
-    let links: Links
+public struct Account: Codable, Equatable {
+    public let username: String
+    public let email: String
+    public let birthday: String
+    public let sex: String
+    public let description: String
+    public let city: String
+    public let avatar: Avatar
+    public let background: Background
+    public let status: String
+    public let passwordRequestedAt: String
+    public let passwordChangedAt: String
+    public let controversial: Bool
+    public let accountStats: Stats
+    public let lastActivity: String
+    public let referralCode: String
+    public let usedReferralCode: String
+    public let currentRank: String
+    public let currentColor: String
+    public let nextRank: String
+    public let nextColor: String
+    public let rankProgress: String
+    public let verified: Bool
+    public let sponsor: Bool
+    public let theme: String
+    public let showNSFW: Bool
+    public let showControversial: Bool
+    public let showWarContent: Bool
+    public let blurNSFW: Bool
+    public let defaultSort: String
+    public let defaultPostType: String
+    public let defaultCommunity: String
+    public let createdAt: String
+    public let links: Links
 
     enum CodingKeys: String, CodingKey {
         case username, email, birthday, sex, description, city, avatar, background, status

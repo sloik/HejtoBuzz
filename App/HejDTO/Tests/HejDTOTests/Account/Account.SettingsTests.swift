@@ -36,10 +36,10 @@ final class AccountSettingsTests: XCTestCase {
         """
 
         // Act
-        let result = try JSONDecoder().decode(AccountSettings.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(Account.Settings.self, from: jsonString.data(using: .utf8)!)
 
         // Assert
-        let expectedResult = AccountSettings(
+        let expectedResult = Account.Settings(
             theme: "string",
             subscribeNewsletter: true,
             subscribeUnreadConversationsEmails: true,

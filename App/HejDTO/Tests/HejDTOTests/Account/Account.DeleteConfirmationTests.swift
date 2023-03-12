@@ -3,7 +3,7 @@ import XCTest
 @testable import HejDTO
 import CustomDump
 
-final class DeleteAccountConfirmationTests: XCTestCase {
+final class AccountDeleteConfirmationTests: XCTestCase {
 
     // https://docs.hejto.pl/#tag/Account/operation/put_account
     func test_parsingJsonExample() throws {
@@ -17,12 +17,12 @@ final class DeleteAccountConfirmationTests: XCTestCase {
         // Act
         let result = try JSONDecoder()
             .decode(
-                DeleteAccountConfirmation.self,
+                Account.DeleteConfirmation.self,
                 from: jsonString.data(using: .utf8)!
             )
 
         // Assert
-        let expectedResult = DeleteAccountConfirmation(
+        let expectedResult = Account.DeleteConfirmation(
             token: .string
         )
 
@@ -30,4 +30,3 @@ final class DeleteAccountConfirmationTests: XCTestCase {
     }
 
 }
-

@@ -3,13 +3,13 @@ import Foundation
 
 extension Account {
 
-    struct AccountStats: Codable, Equatable {
-        let numUnreadNotifications: Int
-        let numUnreadConversations: Int
-        let numPosts: Int
-        let numComments: Int
-        let numFollows: Int
-        let sumScores: Int
+    public struct Stats: Codable, Equatable {
+        public let numUnreadNotifications: Int
+        public let numUnreadConversations: Int
+        public let numPosts: Int
+        public let numComments: Int
+        public let numFollows: Int
+        public let sumScores: Int
 
         enum CodingKeys: String, CodingKey {
             case numUnreadNotifications = "num_unread_notifications"
