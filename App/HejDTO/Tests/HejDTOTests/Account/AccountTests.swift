@@ -72,7 +72,7 @@ final class AccountTests: XCTestCase {
         let expectedResult = Account(
             username: .string,
             email: .string,
-            birthday: .date2019_08_24,
+            birthday: .date2019_08_24T141522Z,
             sex: .string,
             description: .string,
             city: .string,
@@ -85,8 +85,8 @@ final class AccountTests: XCTestCase {
                 uuid: .string
             ),
             status: .string,
-            passwordRequestedAt: .date2019_08_24,
-            passwordChangedAt: .date2019_08_24,
+            passwordRequestedAt: .date2019_08_24T141522Z,
+            passwordChangedAt: .date2019_08_24T141522Z,
             controversial: true,
             accountStats: Account.AccountStats(
                 numUnreadNotifications: 0,
@@ -96,7 +96,7 @@ final class AccountTests: XCTestCase {
                 numFollows: 0,
                 sumScores: 0
             ),
-            lastActivity: .date2019_08_24,
+            lastActivity: .date2019_08_24T141522Z,
             referralCode: .string,
             usedReferralCode: .string,
             currentRank: .string,
@@ -114,7 +114,7 @@ final class AccountTests: XCTestCase {
             defaultSort: .string,
             defaultPostType: .string,
             defaultCommunity: .string,
-            createdAt: .date2019_08_24,
+            createdAt: .date2019_08_24T141522Z,
             links: Account.Links(
                 selfLink: Account.SelfLink(href: .string)
             )
