@@ -1,5 +1,6 @@
 import XCTest
 @testable import HejDTO
+import CustomDump
 
 final class AccountSettingsTests: XCTestCase {
 
@@ -61,6 +62,6 @@ final class AccountSettingsTests: XCTestCase {
             defaultCommunity: "string"
         )
 
-        XCTAssertEqual(result, expectedResult)
+        XCTAssertNoDifference(result, expectedResult)
     }
 }
