@@ -1,6 +1,7 @@
 import Foundation
 
-// Get account settings documentation: https://docs.hejto.pl/#tag/Account/operation/get_account_settings
+/// Get account settings documentation:
+/// https://docs.hejto.pl/#tag/Account/operation/get_account_settings
 public struct AccountSettings: Codable, Equatable {
     
     enum ThemeType: String, Codable {

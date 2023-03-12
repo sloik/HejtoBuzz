@@ -1,7 +1,7 @@
 
 import Foundation
 
-// https://docs.hejto.pl/#tag/Account/operation/put_account
+/// https://docs.hejto.pl/#tag/Account/operation/put_account
 struct UpdateAccount: Codable, Equatable {
     let email: String
     let sex: String
