@@ -3,7 +3,7 @@ import XCTest
 @testable import HejDTO
 import CustomDump
 
-final class UpdateAccountTests: XCTestCase {
+final class AccountUpdateTests: XCTestCase {
 
     // https://docs.hejto.pl/#tag/Account/operation/put_account
     func test_parsingJsonExample() throws {
