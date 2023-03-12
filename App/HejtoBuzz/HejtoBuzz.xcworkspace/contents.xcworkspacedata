@@ -4,4 +4,7 @@
    <FileRef
       location = "container:HejtoBuzz.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:../HejDTO/HejDTO.xctestplan">
+   </FileRef>
 </Workspace>
