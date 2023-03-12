@@ -9,8 +9,8 @@ public struct Account: Codable, Equatable {
     public let sex: String
     public let description: String
     public let city: String
-    public let avatar: Avatar
-    public let background: Background
+    public let avatar: HejDTO.Image
+    public let background: HejDTO.Image
     public let status: String
     public let passwordRequestedAt: String
     public let passwordChangedAt: String

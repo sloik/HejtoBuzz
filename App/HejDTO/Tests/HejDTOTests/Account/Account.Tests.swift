@@ -76,11 +76,11 @@ final class AccountTests: XCTestCase {
             sex: .string,
             description: .string,
             city: .string,
-            avatar: Account.Avatar(
+            avatar: Image(
                 alt: .string,
                 uuid: .string
             ),
-            background: Account.Background(
+            background: Image(
                 alt: .string,
                 uuid: .string
             ),

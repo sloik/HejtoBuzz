@@ -30,8 +30,8 @@ final class AccountImagesTests: XCTestCase {
 
         // Assert
         let expectedResult = Account.Images(
-            avatar: Account.Avatar(alt: .string, uuid: .string),
-            background: Account.Background(alt: .string, uuid: .string)
+            avatar: Image(alt: .string, uuid: .string),
+            background: Image(alt: .string, uuid: .string)
         )
 
         XCTAssertNoDifference(result, expectedResult)
