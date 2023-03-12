@@ -6,12 +6,12 @@ extension Account {
     /// https://docs.hejto.pl/#tag/Account/operation/get_account_settings
     public struct Settings: Codable, Equatable {
 
-        public enum ThemeType: String, Codable {
+        public enum Theme: String, Codable {
             case light = "light"
             case dark = "dark"
         }
 
-        public enum DefaultSort: String, Codable {
+        public enum Sort: String, Codable {
             case hot3 = "hot-3"
             case hot6 = "hot-6"
             case hot12 = "hot-12"
@@ -24,13 +24,13 @@ extension Account {
             case favorited = "favorited"
         }
 
-        public enum DefaultPostType: String, Codable {
+        public enum PostType: String, Codable {
             case all = "all"
             case article = "article"
             case discussion =  "discussion"
         }
 
-        public let theme: String
+        public let theme: Theme
         public let subscribeNewsletter: Bool
         public let subscribeUnreadConversationsEmails: Bool
         public let subscribeUnreadNotificationsEmails: Bool
@@ -47,8 +47,8 @@ extension Account {
         public let showControversial: Bool
         public let showWarContent: Bool
         public let blurNsfw: Bool
-        public let defaultSort: String
-        public let defaultPostType: String
+        public let defaultSort: Sort
+        public let defaultPostType: PostType
         public let defaultCommunity: String
 
         enum CodingKeys: String, CodingKey {

@@ -12,7 +12,7 @@ final class AccountSettingsTests: XCTestCase {
         let jsonString =
         """
         {
-        "theme": "string",
+        "theme": "dark",
         "subscribe_newsletter": true,
         "subscribe_unread_conversations_emails": true,
         "subscribe_unread_notifications_emails": true,
@@ -29,8 +29,8 @@ final class AccountSettingsTests: XCTestCase {
         "show_controversial": true,
         "show_war_content": true,
         "blur_nsfw": true,
-        "default_sort": "string",
-        "default_post_type": "string",
+        "default_sort": "hot-3",
+        "default_post_type": "all",
         "default_community": "string"
         }
         """
@@ -40,7 +40,7 @@ final class AccountSettingsTests: XCTestCase {
 
         // Assert
         let expectedResult = Account.Settings(
-            theme: "string",
+            theme: .dark,
             subscribeNewsletter: true,
             subscribeUnreadConversationsEmails: true,
             subscribeUnreadNotificationsEmails: true,
@@ -57,8 +57,8 @@ final class AccountSettingsTests: XCTestCase {
             showControversial: true,
             showWarContent: true,
             blurNsfw: true,
-            defaultSort: "string",
-            defaultPostType: "string",
+            defaultSort: .hot3,
+            defaultPostType: .all,
             defaultCommunity: "string"
         )
 
