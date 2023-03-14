@@ -3,7 +3,7 @@ import Foundation
 
 extension Account {
 
-    /// https://docs.hejto.pl/#tag/Account/operation/get_account_notifications
+    /// https://docs.hejto.pl/#tag/Account/operation/get_account_notification
     public struct Notification: Codable, Equatable {
 
         public struct Sender: Codable, Equatable {
@@ -47,10 +47,10 @@ extension Account {
             }
         }
 
-        let sender: Sender
-        let type: String
-        let resourceName: String
-        let resourceAction: String
+        public let sender: Sender
+        public let type: String
+        public let resourceName: String
+        public let resourceAction: String
 
         private enum CodingKeys: String, CodingKey {
             case sender

@@ -5,7 +5,6 @@ import CustomDump
 
 final class AccountNotificationTests: XCTestCase {
 
-    // https://docs.hejto.pl/#tag/Account/operation/put_account
     func test_parsingJsonExample() throws {
 
         let jsonString = """
