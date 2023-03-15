@@ -63,18 +63,15 @@ extension UseCaseFactory.Auth {
         static func parseResultAndGetUserToken(_ url: URL) async throws {
 
             // Extracts code from URL
-            await URLComponents(url: url, resolvingAgainstBaseURL: false)?
+            try await URLComponents(url: url, resolvingAgainstBaseURL: false)?
                 .queryItems?
                 .first(where: { $0.name == "code" })?
                 .value
             // Get the token from API
-                .asyncMap { (authCode: String) -> Token? in
-                    try? await Current.api.auth.getToken(code: authCode)
+                .tryAsyncMap { (authCode: String) -> Token? in
+                    try await Current.api.auth.getToken(code: authCode)
                 }?
                 .whenSome( Current.features.inMemoryStore.set(for: .token) )
-
-            // Probably some errors should be thrown. OptionalAPI need
-            // asyncThrowsMap or something. Later `throwOrGetValue` could be used.
         }
     }
 }
