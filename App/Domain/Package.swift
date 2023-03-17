@@ -20,7 +20,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(path: "../SecretsStore"),
-        .package(url: "https://github.com/sloik/OptionalAPI", from: "5.0.2"),
+        .package(url: "https://github.com/sloik/OptionalAPI", from: "5.0.3"),
         .package(url: "https://github.com/sloik/SweetURL", from: "0.0.4"),
     ],
     targets: [
