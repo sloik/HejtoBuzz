@@ -78,7 +78,6 @@ final class AccountWarningTests: XCTestCase {
             createdAt: .date2019_08_24T141522Z
         )
 
-
         XCTAssertNoDifference(result, expectedResult)
     }
 }
