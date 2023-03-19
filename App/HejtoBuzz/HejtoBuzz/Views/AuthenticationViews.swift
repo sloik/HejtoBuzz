@@ -56,7 +56,7 @@ struct AuthenticationView: View {
                 }
             }
             .navigationDestination(for: Token.self) { _ in
-                NextView()
+               // NextView()
             }
             .navigationTitle("Login to hejto.pl")
         }
