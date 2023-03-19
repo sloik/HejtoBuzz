@@ -1,10 +1,3 @@
-//
-//  ListingView.swift
-//  HejtoBuzz
-//
-//  Created by Dominika Kokowicz on 18/03/2023.
-//
-
 import SwiftUI
 
 struct Post: Hashable {

@@ -134,11 +134,11 @@
 		64641FC329AFDBC600120470 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				69F8C42F29C5F48E002DD6A7 /* Theme.swift */,
-				69F8C42629C5F484002DD6A7 /* Dashboard */,
 				64641FC129AFDAC700120470 /* AuthenticationViews.swift */,
 				649A6FC229AEADFD002C1BFC /* ContentView.swift */,
 				647AFFCF29BB6F7300B754E1 /* NextView.swift */,
+				69F8C42F29C5F48E002DD6A7 /* Theme.swift */,
+				69F8C42629C5F484002DD6A7 /* Dashboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,9 +214,9 @@
 		69F8C42629C5F484002DD6A7 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				69F8C42729C5F484002DD6A7 /* ProfileView.swift */,
 				69F8C42929C5F484002DD6A7 /* ListingView.swift */,
 				69F8C42A29C5F484002DD6A7 /* MainDashboardView.swift */,
+				69F8C42729C5F484002DD6A7 /* ProfileView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";

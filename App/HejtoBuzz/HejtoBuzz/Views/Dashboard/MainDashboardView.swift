@@ -1,10 +1,3 @@
-//
-//  MainDashboardView.swift
-//  HejtoBuzz
-//
-//  Created by Dominika Kokowicz on 17/03/2023.
-//
-
 import SwiftUI
 
 struct MainDashboardView: View {
