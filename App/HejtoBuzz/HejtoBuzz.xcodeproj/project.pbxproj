@@ -22,11 +22,13 @@
 		649A6FDC29AEADFE002C1BFC /* HejtoBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FDB29AEADFE002C1BFC /* HejtoBuzzUITests.swift */; };
 		649A6FDE29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649A6FDD29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */; };
 		696AA50229BCD8120054478B /* OptionalAPI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 647AFFD229BB832200B754E1 /* OptionalAPI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		69F8C42529C5F46C002DD6A7 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F8C42429C5F46C002DD6A7 /* Secrets.swift */; };
 		69F8C42B29C5F484002DD6A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F8C42729C5F484002DD6A7 /* ProfileView.swift */; };
 		69F8C42D29C5F484002DD6A7 /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F8C42929C5F484002DD6A7 /* ListingView.swift */; };
 		69F8C42E29C5F484002DD6A7 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F8C42A29C5F484002DD6A7 /* MainDashboardView.swift */; };
 		69F8C43029C5F48E002DD6A7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F8C42F29C5F48E002DD6A7 /* Theme.swift */; };
+		CF51440C2A043E230037283C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51440B2A043E230037283C /* Secrets.swift */; };
+		CF51440D2A043E230037283C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51440B2A043E230037283C /* Secrets.swift */; };
+		CF51440E2A043E230037283C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51440B2A043E230037283C /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,11 +81,11 @@
 		649A6FDB29AEADFE002C1BFC /* HejtoBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITests.swift; sourceTree = "<group>"; };
 		649A6FDD29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HejtoBuzzUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		696AA50129BCD8050054478B /* HejDTO */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = HejDTO; path = ../HejDTO; sourceTree = "<group>"; };
-		69F8C42429C5F46C002DD6A7 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		69F8C42729C5F484002DD6A7 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		69F8C42929C5F484002DD6A7 /* ListingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
 		69F8C42A29C5F484002DD6A7 /* MainDashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
 		69F8C42F29C5F48E002DD6A7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CF51440B2A043E230037283C /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +208,7 @@
 		69F8C42329C5F46C002DD6A7 /* _Secrets */ = {
 			isa = PBXGroup;
 			children = (
-				69F8C42429C5F46C002DD6A7 /* Secrets.swift */,
+				CF51440B2A043E230037283C /* Secrets.swift */,
 			);
 			path = _Secrets;
 			sourceTree = "<group>";
@@ -361,9 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F8C42E29C5F484002DD6A7 /* MainDashboardView.swift in Sources */,
+				CF51440C2A043E230037283C /* Secrets.swift in Sources */,
 				69F8C42D29C5F484002DD6A7 /* ListingView.swift in Sources */,
 				649A6FC329AEADFD002C1BFC /* ContentView.swift in Sources */,
-				69F8C42529C5F46C002DD6A7 /* Secrets.swift in Sources */,
 				647AFFD029BB6F7300B754E1 /* NextView.swift in Sources */,
 				649A6FC129AEADFD002C1BFC /* HejtoBuzzApp.swift in Sources */,
 				69F8C43029C5F48E002DD6A7 /* Theme.swift in Sources */,
@@ -377,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				649A6FD229AEADFE002C1BFC /* HejtoBuzzTests.swift in Sources */,
+				CF51440D2A043E230037283C /* Secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				649A6FDE29AEADFE002C1BFC /* HejtoBuzzUITestsLaunchTests.swift in Sources */,
+				CF51440E2A043E230037283C /* Secrets.swift in Sources */,
 				649A6FDC29AEADFE002C1BFC /* HejtoBuzzUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
