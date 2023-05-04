@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sloik/AliasWonderland.git",
       "state" : {
-        "revision" : "a7da82eda598ae09fface368fed1f5dea4c19479",
-        "version" : "3.5.8"
+        "revision" : "a98ad1e32da510a3bb0fd0e80a1c29430aedcd6b",
+        "version" : "3.5.11"
       }
     },
     {
@@ -14,8 +14,35 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sloik/OptionalAPI",
       "state" : {
-        "revision" : "7b485f448817ba7bfd3e6d5a1aeb050c57514c7a",
-        "version" : "5.0.0"
+        "revision" : "ad56eb50244cb8ecd9c851e1d6b3d770bef26923",
+        "version" : "5.0.3"
+      }
+    },
+    {
+      "identity" : "sweeturl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sloik/SweetURL",
+      "state" : {
+        "revision" : "45099e980acb6a20a4792eabb7daee8af9b27623",
+        "version" : "0.0.4"
+      }
+    },
+    {
+      "identity" : "swift-custom-dump",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-custom-dump.git",
+      "state" : {
+        "revision" : "84b30e1af72e0ffe6dfbfe39d53b8173caacf224",
+        "version" : "0.10.2"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "4af50b38daf0037cfbab15514a241224c3f62f98",
+        "version" : "0.8.5"
       }
     }
   ],
