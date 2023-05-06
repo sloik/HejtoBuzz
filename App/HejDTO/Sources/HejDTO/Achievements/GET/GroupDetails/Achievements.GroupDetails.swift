@@ -3,13 +3,18 @@ import Foundation
 
 extension Achievements {
     
-    /// https://docs.hejto.pl/#tag/Achievements/operation/get_achievement
-    public struct Details: Codable, Equatable {
+    /// https://docs.hejto.pl/#tag/Achievements/operation/get_achievement_group
+    public struct GroupDetails: Codable, Equatable {
         
         public let name: String
-        public let slug: String
-        public let description: String
-        public let icon: Image
+        
+        public struct Achievements: Codable, Equatable {
+            public let name: String
+            public let slug: String
+            public let description: String
+            public let icon: Image
+        }
+        public let achievements: [Achievements]
         
         public struct Links: Codable, Equatable {
             public let selfLink: Link
@@ -21,7 +26,7 @@ extension Achievements {
         public let links: Links
         
         private enum CodingKeys: String, CodingKey {
-            case name, slug, description, icon
+            case name, achievements
             case links = "_links"
         }
     }

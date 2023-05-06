@@ -3,6 +3,7 @@ import Foundation
 
 extension Achievements {
     
+    /// https://docs.hejto.pl/#tag/Achievements/operation/get_achievement_groups
     public struct Groups: Codable, Equatable {
         
         public let page: Int
@@ -50,6 +51,3 @@ extension Achievements {
     }
 }
 
-/*
- failed: caught error: "keyNotFound(CodingKeys(stringValue: "_links", intValue: nil), Swift.DecodingError.Context(codingPath: [CodingKeys(stringValue: "_embedded", intValue: nil), CodingKeys(stringValue: "items", intValue: nil), _JSONKey(stringValue: "Index 0", intValue: 0), CodingKeys(stringValue: "achievements", intValue: nil), _JSONKey(stringValue: "Index 0", intValue: 0)], debugDescription: "No value associated with key CodingKeys(stringValue: \"_links\", intValue: nil) (\"_links\").", underlyingError: nil))"
- */

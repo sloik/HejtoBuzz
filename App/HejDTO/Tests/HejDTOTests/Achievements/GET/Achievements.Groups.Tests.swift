@@ -6,7 +6,7 @@ final class AchievementsGroupsTests: XCTestCase {
     
     func test_parsingJsonExample() throws {
         
-        // json form: https://docs.hejto.pl/#tag/Achievements/operation/get_achievements
+        // json form: https://docs.hejto.pl/#tag/Achievements/operation/get_achievement_groups
         let jsonString =
         """
         {

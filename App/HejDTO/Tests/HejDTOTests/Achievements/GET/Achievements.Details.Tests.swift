@@ -8,7 +8,7 @@ final class AchievementsDetailsTests: XCTestCase {
         
         // Arrange
         
-        // json form: https://docs.hejto.pl/#tag/Achievements/operation/get_achievements
+        // json form: https://docs.hejto.pl/#tag/Achievements/operation/get_achievement
         let jsonString =
         """
         {
