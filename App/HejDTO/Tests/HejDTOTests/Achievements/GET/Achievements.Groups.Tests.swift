@@ -2,11 +2,9 @@ import XCTest
 @testable import HejDTO
 import CustomDump
 
-final class AchievementsTests: XCTestCase {
+final class AchievementsGroupsTests: XCTestCase {
     
     func test_parsingJsonExample() throws {
-        
-        // Arrange
         
         // json form: https://docs.hejto.pl/#tag/Achievements/operation/get_achievements
         let jsonString =
@@ -27,12 +25,17 @@ final class AchievementsTests: XCTestCase {
                 "items": [
                     {
                         "name": "string",
-                        "slug": "string",
-                        "description": "string",
-                        "icon": {
-                            "alt": "string",
-                            "uuid": "string"
-                        },
+                        "achievements": [
+                            {
+                                "name": "string",
+                                "slug": "string",
+                                "description": "string",
+                                "icon": {
+                                    "alt": "string",
+                                    "uuid": "string"
+                                }
+                            }
+                        ],
                         "_links": {
                             "self": {
                                 "href": "string"
@@ -43,11 +46,12 @@ final class AchievementsTests: XCTestCase {
             }
         }
         """
+        
         // Act
-        let result = try JSONDecoder().decode(Achievements.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(Achievements.Groups.self, from: jsonString.data(using: .utf8)!)
         
         // Assert
-        let expectedResult = Achievements(
+        let expectedResult = Achievements.Groups(
             page: 0,
             limit: 0,
             pages: 0,
@@ -59,16 +63,20 @@ final class AchievementsTests: XCTestCase {
                 next: .string,
                 previous: .string
             ),
-            embedded: Achievements.Embedded(
-                items: [Achievements.Embedded.Items(
+            embedded: Achievements.Groups.Embedded(
+                items: [Achievements.Groups.Embedded.Items(
                     name: .string,
-                    slug: .string,
-                    description: .string,
-                    icon: Image(
-                        alt: .string,
-                        uuid: .string
-                    ),
-                    links: Achievements.Embedded.Items.Links(
+                    achievements: [Achievements.Groups.Embedded.Items.Achievements(
+                        name: .string,
+                        slug: .string,
+                        description: .string,
+                        icon: Image(
+                            alt: .string,
+                            uuid: .string
+                        )
+                    )
+                    ],
+                    links: Achievements.Groups.Embedded.Items.Links(
                         selfLink: Link(
                             href: .string
                         )

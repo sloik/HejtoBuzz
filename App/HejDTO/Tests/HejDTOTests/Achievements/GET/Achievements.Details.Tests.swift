@@ -32,13 +32,14 @@ final class AchievementsDetailsTests: XCTestCase {
         
         // Assert
         let expectedResult = Achievements.Details(
-            name: .string
-            , slug: .string
-            , description: .string
-            , icon: Image(
-                alt: .string
-                , uuid: .string
-            ), links: Achievements.Details.Links(
+            name: .string,
+            slug: .string,
+            description: .string,
+            icon: Image(
+                alt: .string,
+                uuid: .string
+            ),
+            links: Achievements.Details.Links(
                 selfLink: Link(
                     href: .string
                 )
