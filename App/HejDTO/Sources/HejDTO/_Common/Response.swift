@@ -44,28 +44,41 @@ public extension Response {
     ///  }
     ///  ```
     @dynamicMemberLookup
-    struct Errors: Equatable {
-        let errors: [String: [String: [String]]]
+    struct Errors: Equatable, Decodable {
 
-        private var _errors: [String: [String]]? { errors["errors"] }
+        /// Internal representation of the whole parsed response.
+        private let _errors:[String: [String: [String]]]
 
+        /// Error records.
+        public var errors: [String: [String]]? { _errors["errors"] }
+
+        /// `True` when errors payload contains error information.
+        public var hasErrors: Bool { errors?.isEmpty == false }
+
+        init(errors: [String : [String : [String]]]) {
+            self._errors = errors
+        }
+
+        // MARK: Codable
+        enum CodingKeys: String, CodingKey {
+            case errors
+        }
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            var errors = [String: [String: [String]]]()
+
+            for key in container.allKeys {
+                let value = try container.decode([String: [String]].self, forKey: key)
+                errors[key.stringValue] = value
+            }
+
+            self._errors = errors
+        }
+
+        // MARK: Dynamic Member Lookup
         subscript(dynamicMember member: String) -> [String]? {
-            _errors?[member]
+            errors?[member]
         }
-    }
-}
-
-extension Response.Errors: Codable {
-
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        var errors = [String: [String: [String]]]()
-
-        for key in container.allKeys {
-            let value = try container.decode([String: [String]].self, forKey: key)
-            errors[key.stringValue] = value
-        }
-
-        self.errors = errors
     }
 }
