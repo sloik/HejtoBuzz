@@ -59,7 +59,6 @@ extension Response.Errors: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         var errors = [String: [String: [String]]]()
 
-
         for key in container.allKeys {
             let value = try container.decode([String: [String]].self, forKey: key)
             errors[key.stringValue] = value
