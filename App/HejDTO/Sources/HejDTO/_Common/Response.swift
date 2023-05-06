@@ -47,8 +47,10 @@ public extension Response {
     struct Errors: Equatable {
         let errors: [String: [String: [String]]]
 
+        private var _errors: [String: [String]]? { errors["errors"] }
+
         subscript(dynamicMember member: String) -> [String]? {
-            errors["errors"]?[member]
+            _errors?[member]
         }
     }
 }
