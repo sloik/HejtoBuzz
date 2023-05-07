@@ -2,9 +2,10 @@
 import Foundation
 
 extension Posts {
-    
+    // Replies may need to be checked in the future, as HejtoAPI has only provided empty brackets for this property.
+    /// Comments[Path] and Comments[query] returns the same json so feel free to use CommentsPath on both.
     /// https://docs.hejto.pl/#tag/Posts/operation/get_post_comments
-    public struct CommentsPath: Codable, Equatable {
+    public struct Comments: Codable, Equatable {
         public let page: Int
         public let limit: Int
         public let pages: Int
@@ -42,11 +43,6 @@ extension Posts {
                 public struct Author: Codable, Equatable {
                     public let username: String
                     public let sex: String
-                    
-                    public struct Image: Codable, Equatable {
-                        public let alt: String
-                        public let uuid: String
-                    }
                     public let avatar: Image
                     public let background: Image
                     

@@ -18,12 +18,12 @@ extension Posts {
             public let status: String
             public let hot: Bool
             
-            public struct Image: Codable, Equatable {
+            public struct Images: Codable, Equatable {
                 public let alt: String
                 public let uuid: String
                 public let position: Int
             }
-            public let images: [Image]
+            public let images: [Images]
             
             public struct Tags: Codable, Equatable {
                 public let name: String
@@ -55,13 +55,7 @@ extension Posts {
             public struct Author: Codable, Equatable {
                 public let username: String
                 public let sex: String
-                
-                public struct Image: Codable, Equatable {
-                    public let alt: String
-                    public let uuid: String
-                }
                 public let avatar: Image
-                
                 public let status: String
                 public let controversial: Bool
                 public let currentRank: String

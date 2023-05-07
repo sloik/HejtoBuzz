@@ -84,39 +84,39 @@ final class PostsCommentsPathTests: XCTestCase {
         """
         
         // Act
-        let result = try JSONDecoder().decode(Posts.CommentsPath.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(Posts.Comments.self, from: jsonString.data(using: .utf8)!)
         
         // Assert
-        let expectedResult = Posts.CommentsPath(
+        let expectedResult = Posts.Comments(
             page: 0,
             limit: 0,
             pages: 0,
             total: 0,
-            links: Posts.CommentsPath.Links(
+            links: Posts.Comments.Links(
                 selfLink: .string,
                 first: .string,
                 last: .string,
                 next: .string,
                 previous: .string
             ),
-            embedded: Posts.CommentsPath.Embedded(
-                items: [Posts.CommentsPath.Embedded.Item(
+            embedded: Posts.Comments.Embedded(
+                items: [Posts.Comments.Embedded.Item(
                     status: .string,
-                    post: Posts.CommentsPath.Embedded.Item.Post(
+                    post: Posts.Comments.Embedded.Item.Post(
                         type: .string,
                         title: .string,
                         slug: .string,
                         excerpt: .string,
                         uuid: .string
                     ),
-                    author: Posts.CommentsPath.Embedded.Item.Author(
+                    author: Posts.Comments.Embedded.Item.Author(
                         username: .string,
                         sex: .string,
-                        avatar: Posts.CommentsPath.Embedded.Item.Author.Image(
+                        avatar: Image(
                             alt: .string,
                             uuid: .string
                         ),
-                        background: Posts.CommentsPath.Embedded.Item.Author.Image(
+                        background: Image(
                             alt: .string,
                             uuid: .string
                         ),
@@ -127,7 +127,7 @@ final class PostsCommentsPathTests: XCTestCase {
                         verified: true,
                         sponsor: true,
                         createdAt: .date2019_08_24T141522Z,
-                        links: Posts.CommentsPath.Embedded.Item.Author.Links(
+                        links: Posts.Comments.Embedded.Item.Author.Links(
                             selfLink: Link(
                                 href: .string
                             ),
@@ -140,13 +140,13 @@ final class PostsCommentsPathTests: XCTestCase {
                     numReports: 0,
                     isLiked: true,
                     isReported: true,
-                    replies: Posts.CommentsPath.Embedded.Item.Replies(),
+                    replies: Posts.Comments.Embedded.Item.Replies(),
                     likesEnabled: true,
                     promoted: 0,
                     createdAt: .date2019_08_24T141522Z,
                     updatedAt: .date2019_08_24T141522Z,
                     uuid: .string,
-                    links: Posts.CommentsPath.Embedded.Item.Links(
+                    links: Posts.Comments.Embedded.Item.Links(
                         selfLink: Link(
                             href: .string
                         ),

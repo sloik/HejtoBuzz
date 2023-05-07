@@ -162,7 +162,7 @@ final class PostsTests: XCTestCase {
                     excerpt: .string,
                     status: .string,
                     hot: true,
-                    images: [Posts.Embedded.Items.Image(
+                    images: [Posts.Embedded.Items.Images(
                         alt: .string,
                         uuid: .string,
                         position: 0
@@ -188,7 +188,7 @@ final class PostsTests: XCTestCase {
                     author: Posts.Embedded.Items.Author(
                         username: .string,
                         sex: .string,
-                        avatar: Posts.Embedded.Items.Author.Image(
+                        avatar: Image(
                             alt: .string,
                             uuid: .string
                         ),
