@@ -35,7 +35,7 @@ extension Posts {
                     public let follows: Link
                     public let blocks: Link
                     
-                    enum CodingKeys: String, CodingKey {
+                    private enum CodingKeys: String, CodingKey {
                         case selfLink = "self"
                         case follows
                         case blocks
@@ -43,7 +43,7 @@ extension Posts {
                 }
                 public let links: Links
                 
-                enum CodingKeys: String, CodingKey {
+                private enum CodingKeys: String, CodingKey {
                     case name
                     case numFollows = "num_follows"
                     case numPosts = "num_posts"
@@ -74,14 +74,14 @@ extension Posts {
                     public let selfLink: Link
                     public let follows: Link
                     
-                    enum CodingKeys: String, CodingKey {
+                    private enum CodingKeys: String, CodingKey {
                         case selfLink = "self"
                         case follows
                     }
                 }
                 public let links: Links
                 
-                enum CodingKeys: String, CodingKey {
+                private enum CodingKeys: String, CodingKey {
                     case username, sex, avatar, status, controversial, verified, sponsor
                     case links = "_links"
                     case currentRank = "current_rank"
@@ -96,7 +96,7 @@ extension Posts {
                 public let slug: String
                 public let primaryColor: String
                 
-                enum CodingKeys: String, CodingKey {
+                private enum CodingKeys: String, CodingKey {
                     case name
                     case slug
                     case primaryColor = "primary_color"
@@ -117,7 +117,7 @@ extension Posts {
                     public let num: Int
                     public let numVotes: Int
                     
-                    enum CodingKeys: String, CodingKey {
+                    private enum CodingKeys: String, CodingKey {
                         case title
                         case num
                         case numVotes = "num_votes"
@@ -162,7 +162,7 @@ extension Posts {
                 public let likes: Link
                 public let favorites: Link
                 
-                enum CodingKeys: String, CodingKey {
+                private enum CodingKeys: String, CodingKey {
                     case selfLink = "self"
                     case comments
                     case likes

@@ -11,7 +11,7 @@ public struct Posts: Codable, Equatable {
     public let links: Links
     public let embedded: Embedded
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case page
         case limit
         case pages
