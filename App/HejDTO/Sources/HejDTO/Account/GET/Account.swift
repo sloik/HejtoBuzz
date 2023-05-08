@@ -1,7 +1,7 @@
 
 import Foundation
 
-/// https://docs.hejto.pl/#tag/Account/operation/get_account
+/// `https://docs.hejto.pl/#tag/Account/operation/get_account`
 public struct Account: Codable, Equatable {
     public let username: String
     public let email: String
