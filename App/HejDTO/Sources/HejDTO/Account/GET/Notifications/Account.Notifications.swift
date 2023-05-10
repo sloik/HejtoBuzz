@@ -40,7 +40,7 @@ extension Account {
                 public let readAt: String?
 
                 public struct Links: Codable, Equatable {
-                    public let selfLink: Link
+                    public let selfLink: Common.Link
 
                     enum CodingKeys: String, CodingKey {
                         case selfLink = "self"

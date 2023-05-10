@@ -78,11 +78,11 @@ final class PostsCommentTests: XCTestCase {
             author: Posts.Comment.Author(
                 username: .string,
                 sex: .string,
-                avatar: Image(
+                avatar: Common.Image(
                     alt: .string,
                     uuid: .string
                 ),
-                background: Image(
+                background: Common.Image(
                     alt: .string,
                     uuid: .string
                 ),
@@ -105,10 +105,10 @@ final class PostsCommentTests: XCTestCase {
             updatedAt: .date2019_08_24T141522Z,
             uuid: .string,
             links: Posts.Comment.Links(
-                selfLink: Link(
+                selfLink: Common.Link(
                     href: .string
                 ),
-                likes: Link(
+                likes: Common.Link(
                     href: .string
                 )
             )

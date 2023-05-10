@@ -19,8 +19,8 @@ extension Posts {
         public struct Author: Codable, Equatable {
             public let username: String
             public let sex: String
-            public let avatar: Image
-            public let background: Image
+            public let avatar: Common.Image
+            public let background: Common.Image
             public let status: String
             public let controversial: Bool
             public let currentRank: String
@@ -60,8 +60,8 @@ extension Posts {
         public let uuid: String
         
         public struct Links: Codable, Equatable {
-            public let selfLink: Link
-            public let likes: Link
+            public let selfLink: Common.Link
+            public let likes: Common.Link
             
             private enum CodingKeys: String, CodingKey {
                 case selfLink = "self"

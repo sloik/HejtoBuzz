@@ -31,9 +31,9 @@ extension Posts {
                 public let numPosts: Int
                 
                 public struct Links: Codable, Equatable {
-                    public let selfLink: Link
-                    public let follows: Link
-                    public let blocks: Link
+                    public let selfLink: Common.Link
+                    public let follows: Common.Link
+                    public let blocks: Common.Link
                     
                     private enum CodingKeys: String, CodingKey {
                         case selfLink = "self"
@@ -55,7 +55,7 @@ extension Posts {
             public struct Author: Codable, Equatable {
                 public let username: String
                 public let sex: String
-                public let avatar: Image
+                public let avatar: Common.Image
                 public let status: String
                 public let controversial: Bool
                 public let currentRank: String
@@ -65,8 +65,8 @@ extension Posts {
                 public let createdAt: String
                 
                 public struct Links: Codable, Equatable {
-                    public let selfLink: Link
-                    public let follows: Link
+                    public let selfLink: Common.Link
+                    public let follows: Common.Link
                     
                     private enum CodingKeys: String, CodingKey {
                         case selfLink = "self"
@@ -151,10 +151,10 @@ extension Posts {
             public let updatedAt: String
             
             public struct Links: Codable, Equatable {
-                public let selfLink: Link
-                public let comments: Link
-                public let likes: Link
-                public let favorites: Link
+                public let selfLink: Common.Link
+                public let comments: Common.Link
+                public let likes: Common.Link
+                public let favorites: Common.Link
                 
                 private enum CodingKeys: String, CodingKey {
                     case selfLink = "self"

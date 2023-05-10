@@ -56,8 +56,8 @@ final class AccountWarningTests: XCTestCase {
             author: Account.Warning.Author(
                 username: .string,
                 sex: .string,
-                avatar: Image(alt: .string, uuid: .string),
-                background: Image(alt: .string, uuid: .string),
+                avatar: Common.Image(alt: .string, uuid: .string),
+                background: Common.Image(alt: .string, uuid: .string),
                 status: .string,
                 controversial: true,
                 currentRank: .string,
@@ -66,12 +66,12 @@ final class AccountWarningTests: XCTestCase {
                 sponsor: true,
                 createdAt: .date2019_08_24T141522Z,
                 links: Account.Warning.Author.Links(
-                    selfLink: Link(href: .string),
-                    follows: Link(href: .string)
+                    selfLink: Common.Link(href: .string),
+                    follows: Common.Link(href: .string)
                 )
             ),
             links: Account.Warning.Links(
-                selfLink: Link(href: .string)
+                selfLink: Common.Link(href: .string)
             ),
             reason: .string,
             uuid: .string,

@@ -35,12 +35,12 @@ final class AchievementsDetailsTests: XCTestCase {
             name: .string,
             slug: .string,
             description: .string,
-            icon: Image(
+            icon: Common.Image(
                 alt: .string,
                 uuid: .string
             ),
             links: Achievements.Details.Links(
-                selfLink: Link(
+                selfLink: Common.Link(
                     href: .string
                 )
             )

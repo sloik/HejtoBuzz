@@ -10,8 +10,8 @@ extension Account {
         public struct Author: Codable, Equatable {
             public let username: String
             public let sex: String
-            public let avatar: Image
-            public let background: Image
+            public let avatar: Common.Image
+            public let background: Common.Image
             public let status: String
             public let controversial: Bool
             public let currentRank: String
@@ -21,8 +21,8 @@ extension Account {
             public let createdAt: String
 
             public struct Links: Codable, Equatable {
-                public let selfLink: Link
-                public let follows: Link
+                public let selfLink: Common.Link
+                public let follows: Common.Link
 
                 private enum CodingKeys: String, CodingKey {
                     case selfLink = "self"
@@ -43,7 +43,7 @@ extension Account {
         public let author: Author
 
         public struct Links: Codable, Equatable {
-            public let selfLink: Link
+            public let selfLink: Common.Link
 
             private enum CodingKeys: String, CodingKey {
                 case selfLink = "self"

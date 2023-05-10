@@ -74,7 +74,7 @@ final class AccountWarningsTests: XCTestCase {
             limit: 0,
             pages: 0,
             total: 0,
-            links: Account.Warnings.Links(
+            links: Common.Links(
                 selfLink: .string,
                 first: .string,
                 last: .string,
@@ -88,8 +88,8 @@ final class AccountWarningsTests: XCTestCase {
                         author: Account.Warnings.Embedded.Item.Author(
                             username: .string,
                             sex: .string,
-                            avatar: Image(alt: .string, uuid: .string),
-                            background: Image(alt: .string, uuid: .string),
+                            avatar: Common.Image(alt: .string, uuid: .string),
+                            background: Common.Image(alt: .string, uuid: .string),
                             status: .string,
                             controversial: true,
                             currentRank: .string,
@@ -98,14 +98,14 @@ final class AccountWarningsTests: XCTestCase {
                             sponsor: true,
                             createdAt: .date2019_08_24T141522Z,
                             links: Account.Warnings.Embedded.Item.Author.Links(
-                                selfLink: Link(href: .string),
-                                follows: Link(href: .string)
+                                selfLink: Common.Link(href: .string),
+                                follows: Common.Link(href: .string)
                             )
                         ),
                         uuid: .string,
                         createdAt: .date2019_08_24T141522Z,
                         links: Account.Warnings.Embedded.Item.Links(
-                            selfLink: Link(href: .string)
+                            selfLink: Common.Link(href: .string)
                         )
                     )
                 ]

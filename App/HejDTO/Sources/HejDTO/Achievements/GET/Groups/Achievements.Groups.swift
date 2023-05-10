@@ -10,7 +10,7 @@ extension Achievements {
         public let limit: Int
         public let pages: Int
         public let total: Int
-        public let links: Achievements.Links
+        public let links: Common.Links
         
         public struct Embedded: Codable, Equatable {
             public let items: [Items]
@@ -22,12 +22,12 @@ extension Achievements {
                     public let name: String
                     public let slug: String
                     public let description: String
-                    public let icon: Image
+                    public let icon: Common.Image
                 }
                 public let achievements: [Achievements]
                 
                 public struct Links: Codable, Equatable {
-                    public let selfLink: Link
+                    public let selfLink: Common.Link
                     
                     private enum CodingKeys: String, CodingKey {
                         case selfLink = "self"
