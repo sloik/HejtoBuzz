@@ -13,7 +13,7 @@ extension Tags {
 
         public struct Embedded: Codable, Equatable {
 
-            public struct Items: Codable, Equatable {
+            public struct Item: Codable, Equatable {
                 public struct User: Codable, Equatable {
                     public let username: String
                     public let sex: String
@@ -39,14 +39,18 @@ extension Tags {
                     public let links: Links
 
                     private enum CodingKeys: String, CodingKey {
-                        case username, sex, avatar, background, status, controversial, currentRank = "current_rank", currentColor = "current_color", verified, sponsor, createdAt = "created_at", links
+                        case username, sex, avatar, background, status, controversial, currentRank = "current_rank", currentColor = "current_color", verified, sponsor, createdAt = "created_at", links = "_links"
                     }
                 }
                 public let user: User
             }
-            public let items: [Items]
+            public let items: [Item]
         }
         public let embedded: Embedded
+
+        private enum CodingKeys: String, CodingKey {
+            case page, limit, pages, total, links = "_links", embedded = "_embedded"
+        }
     }
 
 }
