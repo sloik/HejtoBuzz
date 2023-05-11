@@ -1,0 +1,22 @@
+name: HejDTO Tests
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_14.3.app/Contents/Developer
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '42 0 * * *'
+
+jobs:
+  build:
+
+    runs-on: macos-13
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v --package-path App/HejDTO
+    - name: Run tests
+      run: swift test -v --package-path App/HejDTO

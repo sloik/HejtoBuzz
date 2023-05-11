@@ -129,13 +129,13 @@ final class PostsDetailsTests: XCTestCase {
                 numFollows: 0,
                 numPosts: 0,
                 links: Posts.Details.Tag.Links(
-                    selfLink: Link(
+                    selfLink: Common.Link(
                         href: .string
                     ),
-                    follows: Link(
+                    follows: Common.Link(
                         href: .string
                     ),
-                    blocks: Link(
+                    blocks: Common.Link(
                         href: .string
                     )
                 )
@@ -143,7 +143,7 @@ final class PostsDetailsTests: XCTestCase {
             author: Posts.Details.Author(
                 username: .string,
                 sex: .string,
-                avatar: Posts.Details.Author.Image(
+                avatar: Common.Image(
                     alt: .string,
                     uuid: .string
                 ),
@@ -155,10 +155,10 @@ final class PostsDetailsTests: XCTestCase {
                 sponsor: true,
                 createdAt: .date2019_08_24T141522Z,
                 links: Posts.Details.Author.Links(
-                    selfLink: Link(
+                    selfLink: Common.Link(
                         href: .string
                     ),
-                    follows: Link(
+                    follows: Common.Link(
                         href: .string
                     )
                 )

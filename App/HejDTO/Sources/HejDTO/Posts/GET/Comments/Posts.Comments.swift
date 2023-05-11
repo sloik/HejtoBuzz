@@ -10,20 +10,7 @@ extension Posts {
         public let limit: Int
         public let pages: Int
         public let total: Int
-        
-        public struct Links: Codable, Equatable {
-            public let selfLink: String
-            public let first: String
-            public let last: String
-            public let next: String
-            public let previous: String
-            
-            private enum CodingKeys: String, CodingKey {
-                case selfLink = "self"
-                case first, last, next, previous
-            }
-        }
-        public let links: Links
+        public let links: Common.Links
         
         public struct Embedded: Codable, Equatable {
             public let items: [Item]
@@ -43,8 +30,8 @@ extension Posts {
                 public struct Author: Codable, Equatable {
                     public let username: String
                     public let sex: String
-                    public let avatar: Image
-                    public let background: Image
+                    public let avatar: Common.Image
+                    public let background: Common.Image
                     
                     public let status: String
                     public let controversial: Bool
@@ -55,8 +42,8 @@ extension Posts {
                     public let createdAt: String
                     
                     public struct Links: Codable, Equatable {
-                        public let selfLink: Link
-                        public let follows: Link
+                        public let selfLink: Common.Link
+                        public let follows: Common.Link
                         
                         private enum CodingKeys: String, CodingKey {
                             case selfLink = "self"
@@ -98,8 +85,8 @@ extension Posts {
                 public let uuid: String
                 
                 public struct Links: Codable, Equatable {
-                    public let selfLink: Link
-                    public let likes: Link
+                    public let selfLink: Common.Link
+                    public let likes: Common.Link
                     
                     private enum CodingKeys: String, CodingKey {
                         case selfLink = "self"

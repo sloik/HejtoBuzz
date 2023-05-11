@@ -11,17 +11,7 @@ extension Account {
         public let limit: Int
         public let pages: Int
         public let total: Int
-
-        public struct Links: Codable, Equatable {
-            public let selfLink, first, last, next, previous: String
-
-            private enum CodingKeys: String, CodingKey {
-                case selfLink = "self"
-                case first, last, next, previous
-            }
-        }
-        public let links: Links
-
+        public let links: Common.Links
 
         public struct Embedded: Codable, Equatable {
 
@@ -31,8 +21,8 @@ extension Account {
                 public struct Author: Codable, Equatable {
                     public let username: String
                     public let sex: String
-                    public let avatar: Image
-                    public let background: Image
+                    public let avatar: Common.Image
+                    public let background: Common.Image
                     public let status: String
                     public let controversial: Bool
                     public let currentRank: String
@@ -42,7 +32,7 @@ extension Account {
                     public let createdAt: String
 
                     public struct Links: Codable, Equatable {
-                        public let selfLink, follows: Link
+                        public let selfLink, follows: Common.Link
 
                         private enum CodingKeys: String, CodingKey {
                             case selfLink = "self"
@@ -72,7 +62,7 @@ extension Account {
                 }
 
                 public struct Links: Codable, Equatable {
-                    public let selfLink: Link
+                    public let selfLink: Common.Link
 
                     private enum CodingKeys: String, CodingKey {
                         case selfLink = "self"

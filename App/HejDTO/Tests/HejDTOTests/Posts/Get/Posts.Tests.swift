@@ -146,7 +146,7 @@ final class PostsTests: XCTestCase {
             limit: 0,
             pages: 0,
             total: 0,
-            links: Posts.Links(
+            links: Common.Links(
                 selfLink: .string,
                 first: .string,
                 last: .string,
@@ -173,13 +173,13 @@ final class PostsTests: XCTestCase {
                         numFollows: 0,
                         numPosts: 0,
                         links: Posts.Embedded.Items.Tags.Links(
-                            selfLink: Link(
+                            selfLink: Common.Link(
                                 href: .string
                             ),
-                            follows: Link(
+                            follows: Common.Link(
                                 href: .string
                             ),
-                            blocks: Link(
+                            blocks: Common.Link(
                                 href: .string
                             )
                         )
@@ -188,7 +188,7 @@ final class PostsTests: XCTestCase {
                     author: Posts.Embedded.Items.Author(
                         username: .string,
                         sex: .string,
-                        avatar: Image(
+                        avatar: Common.Image(
                             alt: .string,
                             uuid: .string
                         ),
@@ -200,10 +200,10 @@ final class PostsTests: XCTestCase {
                         sponsor: true,
                         createdAt: .date2019_08_24T141522Z,
                         links: Posts.Embedded.Items.Author.Links(
-                            selfLink: Link(
+                            selfLink: Common.Link(
                                 href: .string
                             ),
-                            follows: Link(
+                            follows: Common.Link(
                                 href: .string
                             )
                         )
@@ -245,16 +245,16 @@ final class PostsTests: XCTestCase {
                     createdAt: .date2019_08_24T141522Z,
                     updatedAt: .date2019_08_24T141522Z,
                     links: Posts.Embedded.Items.Links(
-                        selfLink: Link(
+                        selfLink: Common.Link(
                             href: .string
                         ),
-                        comments: Link(
+                        comments: Common.Link(
                             href: .string
                         ),
-                        likes: Link(
+                        likes: Common.Link(
                             href: .string
                         ),
-                        favorites: Link(
+                        favorites: Common.Link(
                             href: .string
                         )
                     )

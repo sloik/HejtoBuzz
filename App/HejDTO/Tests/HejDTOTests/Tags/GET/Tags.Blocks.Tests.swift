@@ -1,12 +1,13 @@
+
 import XCTest
 @testable import HejDTO
 import CustomDump
 
-final class AccountWarningsTests: XCTestCase {
+final class TagsBlocksTests: XCTestCase {
 
     func test_parsingJsonExample() throws {
 
-        // Arrange
+        // json form: https://docs.hejto.pl/#tag/Posts/operation/get_post_comment
         let jsonString =
         """
         {
@@ -24,8 +25,7 @@ final class AccountWarningsTests: XCTestCase {
           "_embedded": {
             "items": [
               {
-                "reason": "string",
-                "author": {
+                "user": {
                   "username": "string",
                   "sex": "string",
                   "avatar": {
@@ -51,13 +51,6 @@ final class AccountWarningsTests: XCTestCase {
                       "href": "string"
                     }
                   }
-                },
-                "uuid": "string",
-                "created_at": "2019-08-24T14:15:22Z",
-                "_links": {
-                  "self": {
-                    "href": "string"
-                  }
                 }
               }
             ]
@@ -66,10 +59,10 @@ final class AccountWarningsTests: XCTestCase {
         """
 
         // Act
-        let result = try JSONDecoder().decode(Account.Warnings.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(Tags.Blocks.self, from: jsonString.data(using: .utf8)!)
 
         // Assert
-        let expectedResult = Account.Warnings(
+        let expectedResult = Tags.Blocks(
             page: 0,
             limit: 0,
             pages: 0,
@@ -81,11 +74,10 @@ final class AccountWarningsTests: XCTestCase {
                 next: .string,
                 previous: .string
             ),
-            embedded: Account.Warnings.Embedded(
+            embedded: Tags.Blocks.Embedded(
                 items: [
-                    Account.Warnings.Embedded.Item(
-                        reason: .string,
-                        author: Account.Warnings.Embedded.Item.Author(
+                    Tags.Blocks.Embedded.Item(
+                        user: Tags.Blocks.Embedded.Item.User(
                             username: .string,
                             sex: .string,
                             avatar: Common.Image(alt: .string, uuid: .string),
@@ -97,15 +89,10 @@ final class AccountWarningsTests: XCTestCase {
                             verified: true,
                             sponsor: true,
                             createdAt: .date2019_08_24T141522Z,
-                            links: Account.Warnings.Embedded.Item.Author.Links(
+                            links: Tags.Blocks.Embedded.Item.User.Links(
                                 selfLink: Common.Link(href: .string),
                                 follows: Common.Link(href: .string)
                             )
-                        ),
-                        uuid: .string,
-                        createdAt: .date2019_08_24T141522Z,
-                        links: Account.Warnings.Embedded.Item.Links(
-                            selfLink: Common.Link(href: .string)
                         )
                     )
                 ]
@@ -115,3 +102,4 @@ final class AccountWarningsTests: XCTestCase {
         XCTAssertNoDifference(result, expectedResult)
     }
 }
+

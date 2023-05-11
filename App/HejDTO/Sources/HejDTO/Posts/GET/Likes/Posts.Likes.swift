@@ -8,7 +8,7 @@ extension Posts {
         public let limit: Int
         public let pages: Int
         public let total: Int
-        public let links: Links
+        public let links: Common.Links
         public let embedded: Embedded
         
         public struct Embedded: Codable, Equatable {
@@ -19,8 +19,8 @@ extension Posts {
                 public struct Author: Codable, Equatable {
                     public let username: String
                     public let sex: String
-                    public let avatar: HejDTO.Image
-                    public let background: HejDTO.Image
+                    public let avatar: Common.Image
+                    public let background: Common.Image
                     public let status: String
                     public let controversial: Bool
                     public let currentRank: String
