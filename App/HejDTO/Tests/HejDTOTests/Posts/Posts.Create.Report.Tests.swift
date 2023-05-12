@@ -10,14 +10,7 @@ final class PostsCreateReportTests: XCTestCase {
         let jsonString =
         """
         {
-            "errors": {
-                "field_name": [
-                    "This field cannot be empty"
-                ],
-                "another_field_name": [
-                    "This field should be a number"
-                ]
-            }
+        "reason": "inappropriate-content"
         }
         """
         
