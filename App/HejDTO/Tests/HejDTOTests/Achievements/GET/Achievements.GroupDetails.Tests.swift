@@ -52,14 +52,14 @@ final class AchievementsGroupDetailsTests: XCTestCase {
                 name: .string,
                 slug: .string,
                 description: .string,
-                icon: Image(
+                icon: Common.Image(
                     alt: .string,
                     uuid: .string
                 )
             )
             ],
             links: Achievements.GroupDetails.Links(
-                selfLink: Link(
+                selfLink: Common.Link(
                     href: .string
                 )
             )

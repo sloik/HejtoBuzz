@@ -67,22 +67,23 @@ final class PostsCommentLikesTests: XCTestCase {
             limit: 0,
             pages: 0,
             total: 0,
-            links: Posts.Links(
+            links: Common.Links(
                 selfLink: .string,
                 first: .string,
                 last: .string,
                 next: .string,
-                previous: .string),
+                previous: .string
+            ),
             embedded: Posts.CommentLikes.Embedded(
                 items: [Posts.CommentLikes.Embedded.Item(
                     author: Posts.CommentLikes.Embedded.Item.Author(
                         username: .string,
                         sex: .string,
-                        avatar: Image(
+                        avatar: Common.Image(
                             alt: .string,
                             uuid: .string
                         ),
-                        background: Image(
+                        background: Common.Image(
                             alt: .string,
                             uuid: .string
                         ),
@@ -94,10 +95,10 @@ final class PostsCommentLikesTests: XCTestCase {
                         sponsor: true,
                         createdAt: .date2019_08_24T141522Z,
                         links: Posts.CommentLikes.Embedded.Item.Author.Links(
-                            selfLink: Link(
+                            selfLink: Common.Link(
                                 href: .string
                             ),
-                            follows: Link(
+                            follows: Common.Link(
                                 href: .string
                             )
                         )

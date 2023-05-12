@@ -8,7 +8,7 @@ struct Achievements: Codable, Equatable {
     public let limit: Int
     public let pages: Int
     public let total: Int
-    public let links: Links
+    public let links: Common.Links
     public let embedded: Embedded
     
     private enum CodingKeys: String, CodingKey {

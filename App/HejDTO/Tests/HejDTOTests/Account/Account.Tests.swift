@@ -76,11 +76,11 @@ final class AccountTests: XCTestCase {
             sex: .string,
             description: .string,
             city: .string,
-            avatar: Image(
+            avatar: Common.Image(
                 alt: .string,
                 uuid: .string
             ),
-            background: Image(
+            background: Common.Image(
                 alt: .string,
                 uuid: .string
             ),
@@ -116,7 +116,7 @@ final class AccountTests: XCTestCase {
             defaultCommunity: .string,
             createdAt: .date2019_08_24T141522Z,
             links: Account.Links(
-                selfLink: Link(href: .string)
+                selfLink: Common.Link(href: .string)
             )
         )
 

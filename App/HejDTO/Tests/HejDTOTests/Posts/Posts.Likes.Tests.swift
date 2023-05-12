@@ -67,7 +67,7 @@ final class PostsLikesTests: XCTestCase {
             limit: 0,
             pages: 0,
             total: 0,
-            links: Posts.Links(
+            links: Common.Links(
                 selfLink: .string,
                 first: .string,
                 last: .string,
@@ -79,11 +79,11 @@ final class PostsLikesTests: XCTestCase {
                     author: Posts.Likes.Embedded.Item.Author(
                         username: .string,
                         sex: .string,
-                        avatar: Image(
+                        avatar: Common.Image(
                             alt: .string,
                             uuid: .string
                         ),
-                        background: Image(
+                        background: Common.Image(
                             alt: .string,
                             uuid: .string
                         ),

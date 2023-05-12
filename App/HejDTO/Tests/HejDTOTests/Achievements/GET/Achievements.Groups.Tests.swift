@@ -56,7 +56,7 @@ final class AchievementsGroupsTests: XCTestCase {
             limit: 0,
             pages: 0,
             total: 0,
-            links: Achievements.Links(
+            links: Common.Links(
                 selfLink: .string,
                 first: .string,
                 last: .string,
@@ -70,14 +70,14 @@ final class AchievementsGroupsTests: XCTestCase {
                         name: .string,
                         slug: .string,
                         description: .string,
-                        icon: Image(
+                        icon: Common.Image(
                             alt: .string,
                             uuid: .string
                         )
                     )
                     ],
                     links: Achievements.Groups.Embedded.Items.Links(
-                        selfLink: Link(
+                        selfLink: Common.Link(
                             href: .string
                         )
                     )

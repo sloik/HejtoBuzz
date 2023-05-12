@@ -96,8 +96,8 @@ final class AccountNotificationsTests: XCTestCase {
                         sender: Account.Notification.Sender(
                             username: .string,
                             sex: .string,
-                            avatar: Image(alt: .string, uuid: .string),
-                            background: Image(alt: .string, uuid: .string),
+                            avatar: Common.Image(alt: .string, uuid: .string),
+                            background: Common.Image(alt: .string, uuid: .string),
                             status: .string,
                             controversial: true,
                             currentRank: .string,
@@ -106,8 +106,8 @@ final class AccountNotificationsTests: XCTestCase {
                             sponsor: true,
                             createdAt: .date2019_08_24T141522Z,
                             links: Account.Notification.Sender.Links(
-                                selfLink: Link(href: .string),
-                                follows: Link(href: .string)
+                                selfLink: Common.Link(href: .string),
+                                follows: Common.Link(href: .string)
                             )
                         ),
                         type: .string,
@@ -117,7 +117,7 @@ final class AccountNotificationsTests: XCTestCase {
                         uuid: .string,
                         createdAt: .date2019_08_24T141522Z,
                         readAt: .date2019_08_24T141522Z,
-                        links: Account.Notifications.Embedded.Item.Links(selfLink: Link(href: .string))
+                        links: Account.Notifications.Embedded.Item.Links(selfLink: Common.Link(href: .string))
                     )
                 ]
             )

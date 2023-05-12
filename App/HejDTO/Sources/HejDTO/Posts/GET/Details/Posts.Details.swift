@@ -27,9 +27,9 @@ extension Posts {
             public let numPosts: Int
             
             public struct Links: Codable, Equatable {
-                public let selfLink: Link
-                public let follows: Link
-                public let blocks: Link
+                public let selfLink: Common.Link
+                public let follows: Common.Link
+                public let blocks: Common.Link
                 
                 private enum CodingKeys: String, CodingKey {
                     case selfLink = "self"
@@ -56,7 +56,7 @@ extension Posts {
                 public let alt: String
                 public let uuid: String
             }
-            public let avatar: Image
+            public let avatar: Common.Image
             
             public let status: String
             public let controversial: Bool
@@ -67,8 +67,8 @@ extension Posts {
             public let createdAt: String
             
             public struct Links: Codable, Equatable {
-                public let selfLink: Link
-                public let follows: Link
+                public let selfLink: Common.Link
+                public let follows: Common.Link
                 
                 private enum CodingKeys: String, CodingKey {
                     case selfLink = "self"

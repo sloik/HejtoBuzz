@@ -1,7 +1,5 @@
 
-import Foundation
-
-extension Posts {
+extension Common {
     
     public struct Links: Codable, Equatable {
         public let selfLink, first, last, next, previous: String
