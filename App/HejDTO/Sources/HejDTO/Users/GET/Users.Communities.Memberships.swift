@@ -11,14 +11,14 @@ extension Users {
         public let total: Int
         public let links: Common.Links
         
-        struct Embedded: Codable, Equatable {
+        public struct Embedded: Codable, Equatable {
             
-            struct Item: Codable, Equatable {}
-            let items: [Item]
+            public struct Item: Codable, Equatable {}
+            public let items: [Item]
         }
-        let embedded: Embedded
+        public let embedded: Embedded
         
-        enum CodingKeys: String, CodingKey {
+        private enum CodingKeys: String, CodingKey {
             case page
             case limit
             case pages
