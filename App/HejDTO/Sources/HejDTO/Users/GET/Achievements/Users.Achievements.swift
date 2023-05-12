@@ -3,6 +3,7 @@ import Foundation
 
 extension Users {
     
+    /// https://docs.hejto.pl/#tag/Users/operation/get_user_achievements
     public struct Achievements: Codable, Equatable {
         public let page: Int
         public let limit: Int
