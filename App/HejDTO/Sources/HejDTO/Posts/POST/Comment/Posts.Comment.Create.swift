@@ -3,9 +3,16 @@ import Foundation
 
 extension Posts {
     
-    /// There is no DTO for this path. This enum is for documentation and to
-    /// mark this path as already "done" in the DTOs.
-    enum CommentCreate {
+    /// https://docs.hejto.pl/#tag/Posts/operation/post_post_comment
+    public struct CommentCreate: Codable, Equatable {
+        public let content: String
         
+        public struct Images: Codable, Equatable {
+            public let uuid: String
+            public let position: Int
+        }
+        public let images: [Images]
+        
+        public let parent: String
     }
 }
