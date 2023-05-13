@@ -7,7 +7,6 @@ final class TagsBlocksTests: XCTestCase {
 
     func test_parsingJsonExample() throws {
 
-        // json form: https://docs.hejto.pl/#tag/Posts/operation/get_post_comment
         let jsonString =
         """
         {
