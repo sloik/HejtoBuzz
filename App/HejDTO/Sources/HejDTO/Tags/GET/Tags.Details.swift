@@ -1,6 +1,7 @@
 
 extension Tags {
 
+    /// https://docs.hejto.pl/#tag/Tags/operation/get_tag
     public struct Details: Codable, Equatable {
 
             public let name: String
