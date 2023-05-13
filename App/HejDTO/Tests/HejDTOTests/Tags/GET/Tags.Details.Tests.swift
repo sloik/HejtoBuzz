@@ -37,7 +37,7 @@ final class TagsDetailsTests: XCTestCase {
 
         // Assert
         let expectedResult = Tags.Details(
-            name: "string",
+            name: .string,
             controversial: true,
             warContent: true,
             nsfw: true,
@@ -51,7 +51,7 @@ final class TagsDetailsTests: XCTestCase {
                 blocks: Common.Link(href: "string")
             )
         )
-        
+
 
         XCTAssertNoDifference(result, expectedResult)
     }
