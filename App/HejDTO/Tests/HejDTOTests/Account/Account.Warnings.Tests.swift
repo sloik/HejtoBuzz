@@ -104,7 +104,7 @@ final class AccountWarningsTests: XCTestCase {
                         ),
                         uuid: .string,
                         createdAt: .date2019_08_24T141522Z,
-                        links: Account.Warnings.Embedded.Item.Links(
+                        links: Common.SelfLink(
                             selfLink: Common.Link(href: .string)
                         )
                     )

@@ -39,7 +39,7 @@ final class AchievementsDetailsTests: XCTestCase {
                 alt: .string,
                 uuid: .string
             ),
-            links: Achievements.Details.Links(
+            links: Common.SelfLink(
                 selfLink: Common.Link(
                     href: .string
                 )

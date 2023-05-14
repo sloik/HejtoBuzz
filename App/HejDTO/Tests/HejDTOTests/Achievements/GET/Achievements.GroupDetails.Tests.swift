@@ -58,7 +58,7 @@ final class AchievementsGroupDetailsTests: XCTestCase {
                 )
             )
             ],
-            links: Achievements.GroupDetails.Links(
+            links: Common.SelfLink(
                 selfLink: Common.Link(
                     href: .string
                 )
