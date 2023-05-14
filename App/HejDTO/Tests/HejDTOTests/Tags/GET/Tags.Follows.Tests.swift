@@ -3,7 +3,7 @@ import XCTest
 @testable import HejDTO
 import CustomDump
 
-final class TagsBlocksTests: XCTestCase {
+final class TagsFollowsTests: XCTestCase {
 
     func test_parsingJsonExample() throws {
 
@@ -58,10 +58,10 @@ final class TagsBlocksTests: XCTestCase {
         """
 
         // Act
-        let result = try JSONDecoder().decode(Tags.Blocks.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(Tags.Follows.self, from: jsonString.data(using: .utf8)!)
 
         // Assert
-        let expectedResult = Tags.Blocks(
+        let expectedResult = Tags.Follows(
             page: 0,
             limit: 0,
             pages: 0,
@@ -73,10 +73,10 @@ final class TagsBlocksTests: XCTestCase {
                 next: .string,
                 previous: .string
             ),
-            embedded: Tags.Blocks.Embedded(
+            embedded: Tags.Follows.Embedded(
                 items: [
-                    Tags.Blocks.Embedded.Item(
-                        user: Tags.Blocks.Embedded.Item.User(
+                    Tags.Follows.Embedded.Item(
+                        user: Tags.Follows.Embedded.Item.User(
                             username: .string,
                             sex: .string,
                             avatar: Common.Image(alt: .string, uuid: .string),
@@ -88,7 +88,7 @@ final class TagsBlocksTests: XCTestCase {
                             verified: true,
                             sponsor: true,
                             createdAt: .date2019_08_24T141522Z,
-                            links: Tags.Blocks.Embedded.Item.User.Links(
+                            links: Tags.Follows.Embedded.Item.User.Links(
                                 selfLink: Common.Link(href: .string),
                                 follows: Common.Link(href: .string)
                             )
@@ -97,6 +97,7 @@ final class TagsBlocksTests: XCTestCase {
                 ]
             )
         )
+        
 
         XCTAssertNoDifference(result, expectedResult)
     }
