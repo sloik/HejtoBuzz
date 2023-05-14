@@ -26,14 +26,7 @@ extension Achievements {
                 }
                 public let achievements: [Achievements]
                 
-                public struct Links: Codable, Equatable {
-                    public let selfLink: Common.Link
-                    
-                    private enum CodingKeys: String, CodingKey {
-                        case selfLink = "self"
-                    }
-                }
-                public let links: Links
+                public let links: Common.SelfLink
                 
                 private enum CodingKeys: String, CodingKey {
                     case name, achievements

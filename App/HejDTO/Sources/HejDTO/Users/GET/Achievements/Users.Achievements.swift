@@ -23,15 +23,7 @@ extension Users {
                     public let slug: String
                     public let description: String
                     public let icon: Common.Image
-                    
-                    public struct Links: Codable, Equatable {
-                        public let selfLink: Common.Link
-                        
-                        enum CodingKeys: String, CodingKey {
-                            case selfLink = "self"
-                        }
-                    }
-                    public let links: Links
+                    public let links: Common.SelfLink
                     
                     private enum CodingKeys: String, CodingKey {
                         case name, slug, description, icon

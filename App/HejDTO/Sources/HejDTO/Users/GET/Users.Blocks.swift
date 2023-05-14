@@ -60,7 +60,3 @@ extension Users {
         }
     }
 }
-
-/*
- /Users/maciejlipiec/Library/Mobile Documents/com~apple~CloudDocs/studia/Swift kursy/HejtoBuzz/App/HejDTO/Tests/HejDTOTests/Users/Users.Achievements.Tests.swift:49: error: -[HejDTOTests.UsersAchievementsTests test_parsingJsonExample] : failed: caught error: "keyNotFound(CodingKeys(stringValue: "links", intValue: nil), Swift.DecodingError.Context(codingPath: [CodingKeys(stringValue: "_embedded", intValue: nil), CodingKeys(stringValue: "items", intValue: nil), _JSONKey(stringValue: "Index 0", intValue: 0), CodingKeys(stringValue: "achievement", intValue: nil)], debugDescription: "No value associated with key CodingKeys(stringValue: \"links\", intValue: nil) (\"links\").", underlyingError: nil))"
- */

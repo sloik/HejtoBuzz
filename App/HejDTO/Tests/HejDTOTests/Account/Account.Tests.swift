@@ -115,7 +115,7 @@ final class AccountTests: XCTestCase {
             defaultPostType: .string,
             defaultCommunity: .string,
             createdAt: .date2019_08_24T141522Z,
-            links: Account.Links(
+            links: Common.SelfLink(
                 selfLink: Common.Link(href: .string)
             )
         )

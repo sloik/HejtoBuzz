@@ -38,15 +38,7 @@ extension Account {
                 public let uuid: String
                 public let createdAt: String
                 public let readAt: String?
-
-                public struct Links: Codable, Equatable {
-                    public let selfLink: Common.Link
-
-                    enum CodingKeys: String, CodingKey {
-                        case selfLink = "self"
-                    }
-                }
-                public let links: Item.Links
+                public let links: Common.SelfLink
 
                 enum CodingKeys: String, CodingKey {
                     case status, sender, type

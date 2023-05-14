@@ -83,4 +83,3 @@ public struct Users: Codable, Equatable {
         case embedded = "_embedded"
     }
 }
-

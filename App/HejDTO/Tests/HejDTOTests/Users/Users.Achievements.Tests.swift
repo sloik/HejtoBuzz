@@ -71,7 +71,7 @@ final class UsersAchievementsTests: XCTestCase {
                             alt: .string,
                             uuid: .string
                         ),
-                        links: Users.Achievements.Embedded.Item.Achievement.Links(
+                        links: Common.SelfLink(
                             selfLink: Common.Link(
                                 href: .string
                             )
