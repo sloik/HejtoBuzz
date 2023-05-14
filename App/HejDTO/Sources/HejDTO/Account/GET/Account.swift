@@ -35,7 +35,7 @@ public struct Account: Codable, Equatable {
     public let defaultPostType: String
     public let defaultCommunity: String
     public let createdAt: String
-    public let links: Links
+    public let links: Common.SelfLink
 
     enum CodingKeys: String, CodingKey {
         case username, email, birthday, sex, description, city, avatar, background, status

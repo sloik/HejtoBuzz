@@ -68,7 +68,7 @@ final class AchievementsTests: XCTestCase {
                         alt: .string,
                         uuid: .string
                     ),
-                    links: Achievements.Embedded.Items.Links(
+                    links: Common.SelfLink(
                         selfLink: Common.Link(
                             href: .string
                         )

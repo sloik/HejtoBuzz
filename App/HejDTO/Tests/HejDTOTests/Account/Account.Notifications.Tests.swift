@@ -117,7 +117,8 @@ final class AccountNotificationsTests: XCTestCase {
                         uuid: .string,
                         createdAt: .date2019_08_24T141522Z,
                         readAt: .date2019_08_24T141522Z,
-                        links: Account.Notifications.Embedded.Item.Links(selfLink: Common.Link(href: .string))
+                        links: Common.SelfLink(
+                            selfLink: Common.Link(href: .string))
                     )
                 ]
             )
