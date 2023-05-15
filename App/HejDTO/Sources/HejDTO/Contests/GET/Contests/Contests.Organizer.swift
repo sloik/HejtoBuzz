@@ -3,6 +3,7 @@ import Foundation
 
 extension Contests {
     
+    ///https://docs.hejto.pl/#tag/Contests/operation/get_contest
     public struct ContestOrganizer: Codable, Equatable {
         public let username, sex, description, city: String
         public let avatar, background: Common.Image
@@ -11,7 +12,17 @@ extension Contests {
         public let currentRank, currentColor: String
         public let verified, sponsor: Bool
         public let createdAt: String
-        public let links: Contests.Links
+        
+        public struct Links: Codable, Equatable {
+            
+            public let selfLink: Common.Link
+            public let follows: Common.Link
+            
+            private enum CodingKeys: String, CodingKey {
+                case selfLink = "self", follows
+            }
+        }
+        public let links: Links
         
         private enum CodingKeys: String, CodingKey {
             case username, sex, description, city, avatar, background, status, controversial

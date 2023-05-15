@@ -3,6 +3,7 @@ import Foundation
 
 extension Contests {
     
+    ///https://docs.hejto.pl/#tag/Contests/operation/get_contests
     public struct Award: Codable, Equatable {
         public let title, slug, content: String
         public let position: Int

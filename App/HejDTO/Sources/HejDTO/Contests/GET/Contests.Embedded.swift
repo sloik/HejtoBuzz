@@ -1,10 +1,9 @@
 
 import Foundation
 
-//https://docs.hejto.pl/#tag/Contests/operation/get_contests
-
 extension Contests {
     
+    ///https://docs.hejto.pl/#tag/Contests/operation/get_contests
     public struct Embedded: Codable, Equatable {
         public let items: [Contest]
         

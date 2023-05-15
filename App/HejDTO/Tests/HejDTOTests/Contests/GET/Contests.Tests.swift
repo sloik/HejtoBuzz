@@ -143,7 +143,7 @@ final class ContestsTests: XCTestCase {
                     verified: true,
                     sponsor: true,
                     createdAt: .date2019_08_24T141522Z,
-                    links: Contests.Links(
+                    links: Contests.ContestOrganizer.Links(
                         selfLink: Common.Link(href: .string),
                         follows: Common.Link(href: .string))),
                 userScore: 0,

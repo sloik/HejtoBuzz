@@ -1,10 +1,9 @@
 
 import Foundation
 
-//https://docs.hejto.pl/#tag/Contests/operation/get_contests
-
 public struct Contests: Codable, Equatable {
     
+    ///https://docs.hejto.pl/#tag/Contests/operation/get_contests
     public let page, limit, pages, total: Int
     public let links: Common.Links
     public let embedded: Embedded

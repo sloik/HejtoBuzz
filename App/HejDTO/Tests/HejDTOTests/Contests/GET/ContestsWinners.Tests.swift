@@ -63,10 +63,10 @@ final class ContestsWinnersTests: XCTestCase {
         }
         """
         // Act
-        let result = try JSONDecoder().decode(ContestWinners.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(Contests.ContestWinners.self, from: jsonString.data(using: .utf8)!)
         
         // Assert
-        let expectedResult = ContestWinners(
+        let expectedResult = Contests.ContestWinners(
             page: 0,
             limit: 0,
             pages: 0,
@@ -77,9 +77,9 @@ final class ContestsWinnersTests: XCTestCase {
                 last: .string,
                 next: .string,
                 previous: .string),
-            embedded: ContestWinners.Embedded(
-                items: [ContestWinners.ContestWinner(
-                    user: ContestWinners.ContestUserWinner(
+            embedded: Contests.ContestWinners.Embedded(
+                items: [Contests.ContestWinner(
+                    user: Contests.ContestWinner.ContestUserWinner(
                         username: .string,
                         sex: .string,
                         description: .string,
@@ -97,11 +97,12 @@ final class ContestsWinnersTests: XCTestCase {
                         verified: true,
                         sponsor: true,
                         createdAt: .date2019_08_24T141522Z,
-                        links: Contests.Links(selfLink: Common.Link(href: .string),
-                                              follows: Common.Link(href: .string))),
+                        links: Contests.ContestWinner.ContestUserWinner.Links(
+                            selfLink: Common.Link(href: .string),
+                            follows: Common.Link(href: .string))),
                     place: 0,
                     uuid: .string)]))
-    
+        
         XCTAssertNoDifference(result, expectedResult)
     }
 }
