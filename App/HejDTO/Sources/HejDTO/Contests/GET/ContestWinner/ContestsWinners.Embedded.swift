@@ -4,12 +4,12 @@ import Foundation
 extension Contests {
     
     ///https://docs.hejto.pl/#tag/Contests/operation/get_contest_winners
-    public struct ContestWinner: Codable, Equatable {
-        public let user: ContestUserWinner
+    public struct Winner: Codable, Equatable {
+        public let user: ContestUser
         public let place: Int
         public let uuid: String
         
-        public struct ContestUserWinner: Codable, Equatable {
+        public struct ContestUser: Codable, Equatable {
             public let username, sex, description, city: String
             public let avatar, background: Common.Image
             public let status: String

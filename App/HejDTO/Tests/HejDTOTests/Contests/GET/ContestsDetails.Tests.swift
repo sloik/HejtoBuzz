@@ -76,10 +76,10 @@ final class ContestsDetailsTests: XCTestCase {
         }
         """
         // Act
-        let result = try JSONDecoder().decode(Contests.ContestDetail.self, from: jsonString.data(using: .utf8)!)
+        let result = try JSONDecoder().decode(Contests.Detail.self, from: jsonString.data(using: .utf8)!)
         
         // Assert
-        let expectedResult = Contests.ContestDetail(
+        let expectedResult = Contests.Detail(
             type: .string,
             title: .string,
             slug: .string,
@@ -89,12 +89,12 @@ final class ContestsDetailsTests: XCTestCase {
             image: Common.Image(
                 alt: .string,
                 uuid: .string),
-            awards: [Contests.Award(
+            awards: [Contests.Detail.Award(
                 title: .string,
                 slug: .string,
                 content: .string,
                 position: 0,
-                images: [Contests.Award.AwardImage(
+                images: [Contests.Detail.Award.AwardImage(
                     alt: .string,
                     uuid: .string,
                     position: 0)])],

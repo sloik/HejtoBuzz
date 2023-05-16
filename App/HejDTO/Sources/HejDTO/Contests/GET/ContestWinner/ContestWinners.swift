@@ -7,7 +7,7 @@ extension Contests {
     public struct ContestWinners: Codable, Equatable {
         
         public struct Embedded: Codable, Equatable {
-            public let items: [ContestWinner]
+            public let items: [Winner]
         }
         
         public let page: Int

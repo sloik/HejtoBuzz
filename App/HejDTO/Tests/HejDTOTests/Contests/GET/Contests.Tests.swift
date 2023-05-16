@@ -116,12 +116,12 @@ final class ContestsTests: XCTestCase {
                 finishedAt: .date2019_08_24T141522Z,
                 image: Common.Image(alt: .string,
                                     uuid: .string),
-                awards: [Contests.Award(
+                awards: [Contests.Detail.Award(
                     title: .string,
                     slug: .string,
                     content: .string,
                     position: 0,
-                    images: [Contests.Award.AwardImage(
+                    images: [Contests.Detail.Award.AwardImage(
                         alt: .string,
                         uuid: .string,
                         position: 0)])],
