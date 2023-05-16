@@ -121,7 +121,7 @@ final class ContestsTests: XCTestCase {
                     slug: .string,
                     content: .string,
                     position: 0,
-                    images: [Contests.Detail.Award.AwardImage(
+                    images: [Contests.Detail.Award.Image(
                         alt: .string,
                         uuid: .string,
                         position: 0)])],

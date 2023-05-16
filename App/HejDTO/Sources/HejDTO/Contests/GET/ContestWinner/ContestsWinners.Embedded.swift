@@ -5,11 +5,11 @@ extension Contests {
     
     ///https://docs.hejto.pl/#tag/Contests/operation/get_contest_winners
     public struct Winner: Codable, Equatable {
-        public let user: ContestUser
+        public let user: User
         public let place: Int
         public let uuid: String
         
-        public struct ContestUser: Codable, Equatable {
+        public struct User: Codable, Equatable {
             public let username, sex, description, city: String
             public let avatar, background: Common.Image
             public let status: String

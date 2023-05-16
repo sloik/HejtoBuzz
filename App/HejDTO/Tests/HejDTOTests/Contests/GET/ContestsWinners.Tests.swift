@@ -79,7 +79,7 @@ final class ContestsWinnersTests: XCTestCase {
                 previous: .string),
             embedded: Contests.ContestWinners.Embedded(
                 items: [Contests.Winner(
-                    user: Contests.Winner.ContestUser(
+                    user: Contests.Winner.User(
                         username: .string,
                         sex: .string,
                         description: .string,
@@ -97,7 +97,7 @@ final class ContestsWinnersTests: XCTestCase {
                         verified: true,
                         sponsor: true,
                         createdAt: .date2019_08_24T141522Z,
-                        links: Contests.Winner.ContestUser.Links(
+                        links: Contests.Winner.User.Links(
                             selfLink: Common.Link(href: .string),
                             follows: Common.Link(href: .string))),
                     place: 0,
