@@ -16,7 +16,7 @@ extension Contests {
             public let finishedAt: String
             public let image: Common.Image
             public let awards: [Contests.Detail.Award]
-            public let organizedBy: Contests.ContestOrganizer
+            public let organizedBy: Contests.Organizer
             public let userScore, userPosition: Int
             public let links: Common.SelfLink
             

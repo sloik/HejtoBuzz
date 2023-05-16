@@ -9,7 +9,7 @@ extension Contests {
         public let startedAt, finishedAt: String
         public let image: Common.Image
         public let awards: [Award]
-        public let organizedBy: Contests.ContestOrganizer
+        public let organizedBy: Contests.Organizer
         public let userScore, userPosition: Int
         public let links: Common.SelfLink
         
@@ -36,7 +36,7 @@ extension Contests {
         }
     }
     
-    public struct ContestOrganizer: Codable, Equatable {
+    public struct Organizer: Codable, Equatable {
         public let username, sex, description, city: String
         public let avatar, background: Common.Image
         public let status: String
