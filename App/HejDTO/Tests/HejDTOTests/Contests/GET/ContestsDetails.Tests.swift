@@ -98,7 +98,7 @@ final class ContestsDetailsTests: XCTestCase {
                     alt: .string,
                     uuid: .string,
                     position: 0)])],
-            organizedBy: Contests.Organizer(
+            organizedBy: Contests.Detail.Organizer(
                 username: .string,
                 sex: .string,
                 description: .string,
@@ -116,7 +116,7 @@ final class ContestsDetailsTests: XCTestCase {
                 verified: true,
                 sponsor: true,
                 createdAt: .date2019_08_24T141522Z,
-                links: Contests.Organizer.Links(selfLink: Common.Link(href: .string),
+                links: Contests.Detail.Organizer.Links(selfLink: Common.Link(href: .string),
                                       follows: Common.Link(href: .string))),
             userScore: 0,
             userPosition: 0,
