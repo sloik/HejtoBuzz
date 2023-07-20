@@ -1,3 +1,9 @@
+# 😥 nic z tego
+
+Plany mieliśmy piękne ale hejto od miesięcy nie naprawiło bug-a z logowaniem w API. Do tego przestała działać strona z dokumentacją. W takim wypadku archiwizuje repo bo szkoda czasu.
+
+---
+
 # HejtoBuzz - iOS Client for hejto.pl
 
 HejtoBuzz is an open-source iOS application that provides a client for hejto.pl. 
